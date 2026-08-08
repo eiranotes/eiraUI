@@ -1,0 +1,818 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/eiranotes/eiraUI/schemas/ui-reference-analysis.schema.json",
+  "title": "eiraUI UI Reference Analysis Manifest",
+  "description": "Machine-readable index for a reference UI analysis. The detailed narrative remains in analysis.md.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "schemaVersion",
+    "analysisId",
+    "status",
+    "createdAt",
+    "updatedAt",
+    "subject",
+    "target",
+    "references",
+    "classification",
+    "elements",
+    "reconstruction",
+    "uncertainties",
+    "sources"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "analysisId": {
+      "type": "string",
+      "pattern": "^UIR-[0-9]{8}-[0-9]{3}$"
+    },
+    "status": {
+      "enum": [
+        "draft",
+        "complete",
+        "superseded"
+      ]
+    },
+    "createdAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "supersedes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^UIR-[0-9]{8}-[0-9]{3}$"
+      },
+      "uniqueItems": true
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "productName",
+        "productType",
+        "surfaceName",
+        "platform"
+      ],
+      "properties": {
+        "productName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "productType": {
+          "enum": [
+            "app",
+            "website",
+            "web-app",
+            "design-system",
+            "other"
+          ]
+        },
+        "surfaceName": {
+          "type": "string",
+          "minLength": 1
+        },
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "locale": {
+          "type": "string"
+        },
+        "theme": {
+          "enum": [
+            "light",
+            "dark",
+            "mixed",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "platform"
+      ],
+      "properties": {
+        "platform": {
+          "type": "string",
+          "minLength": 1
+        },
+        "framework": {
+          "type": "string"
+        },
+        "purpose": {
+          "enum": [
+            "faithful-reconstruction",
+            "selective-borrowing",
+            "redesign-baseline"
+          ]
+        }
+      }
+    },
+    "referenceStorage": {
+      "enum": [
+        "link_only",
+        "local_public",
+        "local_authorized",
+        "generated",
+        "private_uncommitted"
+      ]
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/reference"
+      }
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "interfaceArchetype",
+        "primaryStyle"
+      ],
+      "properties": {
+        "interfaceArchetype": {
+          "type": "string",
+          "minLength": 1
+        },
+        "secondaryArchetype": {
+          "type": "string"
+        },
+        "navigationModel": {
+          "type": "string"
+        },
+        "primaryStyle": {
+          "$ref": "#/$defs/term"
+        },
+        "secondaryStyles": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/term"
+          }
+        },
+        "rejectedLabels": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "reason"
+            ],
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "reason": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "readingOrder": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "order",
+          "elementId",
+          "mechanism"
+        ],
+        "properties": {
+          "order": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "elementId": {
+            "type": "string"
+          },
+          "mechanism": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidenceStatus": {
+            "$ref": "#/$defs/evidenceStatus"
+          },
+          "confidence": {
+            "$ref": "#/$defs/confidence"
+          }
+        }
+      }
+    },
+    "layout": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "model": {
+          "type": "string"
+        },
+        "sourceViewport": {
+          "$ref": "#/$defs/viewport"
+        },
+        "outerInsets": {
+          "type": "object"
+        },
+        "regions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "id",
+              "role"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "referenceId": {
+                "type": "string"
+              },
+              "role": {
+                "type": "string"
+              },
+              "bbox": {
+                "$ref": "#/$defs/bbox"
+              },
+              "relationship": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "elements": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/element"
+      }
+    },
+    "typography": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/typographyRole"
+      }
+    },
+    "palette": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/colorSample"
+      }
+    },
+    "interactions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "elementId",
+          "trigger",
+          "result",
+          "evidenceStatus"
+        ],
+        "properties": {
+          "elementId": {
+            "type": "string"
+          },
+          "trigger": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string"
+          },
+          "evidenceStatus": {
+            "$ref": "#/$defs/evidenceStatus"
+          },
+          "confidence": {
+            "$ref": "#/$defs/confidence"
+          }
+        }
+      }
+    },
+    "reconstruction": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "directive",
+        "layoutRules",
+        "componentMappings",
+        "prohibitions",
+        "qa"
+      ],
+      "properties": {
+        "directive": {
+          "type": "string",
+          "minLength": 1
+        },
+        "layoutRules": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "componentMappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "referenceElementId",
+              "targetComponent"
+            ],
+            "properties": {
+              "referenceElementId": {
+                "type": "string"
+              },
+              "targetComponent": {
+                "type": "string"
+              },
+              "nativeOrCustom": {
+                "enum": [
+                  "native",
+                  "custom",
+                  "hybrid"
+                ]
+              },
+              "customization": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "tokenFile": {
+          "type": "string"
+        },
+        "prohibitions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "qa": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "check",
+              "target",
+              "method"
+            ],
+            "properties": {
+              "check": {
+                "type": "string"
+              },
+              "target": {
+                "type": "string"
+              },
+              "tolerance": {
+                "type": "string"
+              },
+              "method": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "question",
+          "status",
+          "blocksRebuild"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^U-[0-9]{2,}$"
+          },
+          "question": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "unknown",
+              "inferred",
+              "resolved"
+            ]
+          },
+          "alternatives": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidenceNeeded": {
+            "type": "string"
+          },
+          "blocksRebuild": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "authorityClass": {
+      "enum": [
+        "STANDARD_NORMATIVE",
+        "W3C_GUIDANCE",
+        "PLATFORM_OFFICIAL",
+        "STABLE_OPEN_SPEC",
+        "RESEARCH_PRACTICE",
+        "INDUSTRY_CONVENTIONAL",
+        "PROJECT_DEFINED"
+      ]
+    },
+    "evidenceStatus": {
+      "enum": [
+        "OBSERVED",
+        "MEASURED",
+        "SAMPLED",
+        "INFERRED",
+        "PROPOSED",
+        "UNKNOWN"
+      ]
+    },
+    "confidence": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "viewport": {
+      "type": "object",
+      "required": [
+        "width",
+        "height",
+        "unit"
+      ],
+      "properties": {
+        "width": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "height": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "unit": {
+          "enum": [
+            "px",
+            "pt",
+            "css-px",
+            "unknown"
+          ]
+        }
+      }
+    },
+    "bbox": {
+      "type": "object",
+      "required": [
+        "x",
+        "y",
+        "width",
+        "height",
+        "coordinateSpace"
+      ],
+      "properties": {
+        "x": {
+          "type": "number",
+          "minimum": 0
+        },
+        "y": {
+          "type": "number",
+          "minimum": 0
+        },
+        "width": {
+          "type": "number",
+          "minimum": 0
+        },
+        "height": {
+          "type": "number",
+          "minimum": 0
+        },
+        "coordinateSpace": {
+          "enum": [
+            "source-px",
+            "normalized-1000",
+            "target-pt",
+            "target-css-px"
+          ]
+        }
+      }
+    },
+    "reference": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "sourceType",
+        "locator",
+        "viewport",
+        "storagePolicy"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^REF-[0-9]{2,}$"
+        },
+        "sourceType": {
+          "enum": [
+            "upload",
+            "screenshot",
+            "url",
+            "video-frame",
+            "design-file",
+            "generated"
+          ]
+        },
+        "locator": {
+          "type": "string",
+          "minLength": 1
+        },
+        "capturedAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "viewport": {
+          "$ref": "#/$defs/viewport"
+        },
+        "deviceOrBrowser": {
+          "type": "string"
+        },
+        "locale": {
+          "type": "string"
+        },
+        "theme": {
+          "enum": [
+            "light",
+            "dark",
+            "mixed",
+            "unknown"
+          ]
+        },
+        "transformation": {
+          "type": "string"
+        },
+        "storagePolicy": {
+          "enum": [
+            "link_only",
+            "local_public",
+            "local_authorized",
+            "generated",
+            "private_uncommitted"
+          ]
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-fA-F0-9]{64}$"
+        }
+      }
+    },
+    "term": {
+      "type": "object",
+      "required": [
+        "label",
+        "authority",
+        "definingTraits"
+      ],
+      "properties": {
+        "label": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authority": {
+          "$ref": "#/$defs/authorityClass"
+        },
+        "sourceId": {
+          "type": "string"
+        },
+        "platformScope": {
+          "type": "string"
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "definingTraits": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "element": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": [
+        "id",
+        "referenceId",
+        "literalObservation",
+        "canonicalTerm",
+        "authority",
+        "hierarchyRole",
+        "evidenceStatus",
+        "confidence",
+        "rebuildDirective"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(SYS|NAV|ACT|TXT|IMG|ROW|GRP|SUR|DEC|DAT|OVR|FDB)-[0-9]{2,}$"
+        },
+        "referenceId": {
+          "type": "string",
+          "pattern": "^REF-[0-9]{2,}$"
+        },
+        "bbox": {
+          "$ref": "#/$defs/bbox"
+        },
+        "literalObservation": {
+          "type": "string",
+          "minLength": 1
+        },
+        "canonicalTerm": {
+          "type": "string",
+          "minLength": 1
+        },
+        "authority": {
+          "$ref": "#/$defs/authorityClass"
+        },
+        "sourceId": {
+          "type": "string"
+        },
+        "platformMapping": {
+          "type": "string"
+        },
+        "hierarchyRole": {
+          "type": "string"
+        },
+        "anatomy": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "interaction": {
+          "type": "string"
+        },
+        "states": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "evidenceStatus": {
+          "$ref": "#/$defs/evidenceStatus"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        },
+        "rebuildDirective": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "typographyRole": {
+      "type": "object",
+      "required": [
+        "role",
+        "classification",
+        "evidenceStatus"
+      ],
+      "properties": {
+        "role": {
+          "type": "string"
+        },
+        "elementIds": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "classification": {
+          "type": "string"
+        },
+        "estimatedSize": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "string"
+        },
+        "lineHeight": {
+          "type": "string"
+        },
+        "tracking": {
+          "type": "string"
+        },
+        "alignment": {
+          "type": "string"
+        },
+        "evidenceStatus": {
+          "$ref": "#/$defs/evidenceStatus"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        }
+      }
+    },
+    "colorSample": {
+      "type": "object",
+      "required": [
+        "tokenCandidate",
+        "value",
+        "semanticRole",
+        "evidenceStatus"
+      ],
+      "properties": {
+        "tokenCandidate": {
+          "type": "string"
+        },
+        "sampleLocation": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        },
+        "semanticRole": {
+          "type": "string"
+        },
+        "themeBehavior": {
+          "type": "string"
+        },
+        "evidenceStatus": {
+          "$ref": "#/$defs/evidenceStatus"
+        },
+        "confidence": {
+          "$ref": "#/$defs/confidence"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": [
+        "id",
+        "authority",
+        "title",
+        "url",
+        "verifiedAt"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^SRC-[0-9]{2,}$"
+        },
+        "authority": {
+          "$ref": "#/$defs/authorityClass"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "section": {
+          "type": "string"
+        },
+        "verifiedAt": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  }
+}
