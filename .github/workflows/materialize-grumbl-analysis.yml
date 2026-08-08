@@ -30,8 +30,44 @@ jobs:
         shell: bash
         run: |
           set -euo pipefail
-          cat tools/.payload/grumbl-*.b64part | base64 --decode > /tmp/grumbl-analysis.tar.xz
-          echo "da49887df18364628663e835c859299f6c7ef8a843eb9ce5708408d57e18bf74  /tmp/grumbl-analysis.tar.xz" | sha256sum --check --strict
+          python - <<'PY'
+          import base64
+          import hashlib
+          from pathlib import Path
+
+          expected = {
+              'grumbl-00.b64part': ('f6feab8e49ff2aa2068c2dcacd33dac857421ec9d55c100d98686f76990af67c', 7900),
+              'grumbl-01.b64part': ('b4a81e06073f23fc47fb07bb32579e7c20f7b5e9a3fd1c8045a4b55ce4638891', 7900),
+              'grumbl-02.b64part': ('59be56394e7050ac7bdac830ac9233b529e1ca4ee4318ea2f229454d6460a50d', 7900),
+              'grumbl-03.b64part': ('3670d7508983f9307401881e746efc3a460052a15d21ab5be6baef3e05d88fd2', 7900),
+              'grumbl-04.b64part': ('4c77da446816831f2b24fe275016cfe13677b3f9579d5b7349e9d5e6e83bab1b', 7900),
+              'grumbl-05.b64part': ('ffe0ea19fe39ba4466c0c458244d2f9339b0a09de6792441cf9ee7459f41071b', 7900),
+              'grumbl-06.b64part': ('f2464d013762ffc03b729944865a0a22159773eedb008873d5a1a02fd787b0a3', 16),
+          }
+          paths = sorted(Path('tools/.payload').glob('grumbl-*.b64part'))
+          assert len(paths) == 7, paths
+          chunks = []
+          mismatches = []
+          for path in paths:
+              data = path.read_bytes()
+              digest = hashlib.sha256(data).hexdigest()
+              expected_digest, expected_size = expected[path.name]
+              print(path.name, len(data), digest)
+              if len(data) != expected_size or digest != expected_digest:
+                  mismatches.append((path.name, len(data), digest, expected_size, expected_digest))
+              chunks.append(data)
+          if mismatches:
+              for item in mismatches:
+                  print('MISMATCH', item)
+              raise SystemExit('staged payload chunks differ from local source')
+          encoded = b''.join(chunks)
+          decoded = base64.b64decode(encoded, validate=True)
+          digest = hashlib.sha256(decoded).hexdigest()
+          print('decoded', len(decoded), digest)
+          if digest != 'da49887df18364628663e835c859299f6c7ef8a843eb9ce5708408d57e18bf74':
+              raise SystemExit('decoded archive SHA-256 mismatch')
+          Path('/tmp/grumbl-analysis.tar.xz').write_bytes(decoded)
+          PY
           mkdir -p /tmp/grumbl-analysis
           tar -xJf /tmp/grumbl-analysis.tar.xz -C /tmp/grumbl-analysis
           test -s /tmp/grumbl-analysis/analysis.md
