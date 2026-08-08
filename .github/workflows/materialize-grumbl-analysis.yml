@@ -50,16 +50,31 @@ jobs:
           mismatches = []
           for path in paths:
               data = path.read_bytes()
-              digest = hashlib.sha256(data).hexdigest()
               expected_digest, expected_size = expected[path.name]
-              print(path.name, len(data), digest)
+              original_digest = hashlib.sha256(data).hexdigest()
+              print(path.name, len(data), original_digest)
+
+              if len(data) == expected_size + 1 and original_digest != expected_digest:
+                  repaired = None
+                  for index in range(len(data)):
+                      candidate = data[:index] + data[index + 1:]
+                      if hashlib.sha256(candidate).hexdigest() == expected_digest:
+                          repaired = candidate
+                          print(f"repaired {path.name}: removed byte at index {index}: {data[index:index+1]!r}")
+                          break
+                  if repaired is not None:
+                      data = repaired
+
+              digest = hashlib.sha256(data).hexdigest()
               if len(data) != expected_size or digest != expected_digest:
                   mismatches.append((path.name, len(data), digest, expected_size, expected_digest))
               chunks.append(data)
+
           if mismatches:
               for item in mismatches:
                   print('MISMATCH', item)
               raise SystemExit('staged payload chunks differ from local source')
+
           encoded = b''.join(chunks)
           decoded = base64.b64decode(encoded, validate=True)
           digest = hashlib.sha256(decoded).hexdigest()
