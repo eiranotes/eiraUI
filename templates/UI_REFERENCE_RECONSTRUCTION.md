@@ -16,7 +16,7 @@ target:
   platform: ""
   framework: ""
 reference_storage: "link_only | local_public | local_authorized | generated | private_uncommitted"
-template_version: "1.0.0"
+template_version: "1.1.0"
 ---
 
 # [Product] — [Surface] UI Reference Reconstruction
@@ -63,6 +63,19 @@ without listing the observable properties that produce them.]
 | Ref ID | Source type | Locator or repository path | Capture date | Viewport | Device/browser | Transformation | Storage policy |
 |---|---|---|---:|---|---|---|---|
 | `REF-01` | upload / screenshot / URL / video frame / design file | | | `W×H px` | | original / crop / resized | |
+
+### 1.2a Public app-listing completeness
+
+Complete this table whenever the subject has a public App Store, Google Play, or equivalent listing.
+
+| Storefront | Platform / device family | Locale | Published assets | Analyzed assets | Missing / inaccessible | Verified |
+|---|---|---|---:|---:|---|---:|
+| | | | | | | |
+
+**Identity check:** `[store URL or ID]` → `[displayed app name]` → `[developer]`  
+**Coverage result:** `complete / incomplete / accepted limitation`  
+
+A store-listing analysis is not complete when the published and analyzed counts differ without an explicit accepted limitation. Keep every asset in published order even when screens are visually similar.
 
 ### 1.3 Evidence limitations
 

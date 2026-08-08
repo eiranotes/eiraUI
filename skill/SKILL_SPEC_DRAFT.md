@@ -36,19 +36,23 @@ Useful optional inputs:
 
 Do not block execution when optional inputs are absent. Infer a reasonable target scope and record the uncertainty.
 
+When the user supplies an exact App Store, Google Play, or equivalent store URL or ID, treat that identity as authoritative. Do not replace it with a similarly named product found through fuzzy search.
+
 ## 3. Required operations
 
-1. Resolve all reference assets.
-2. Capture metadata: dimensions, source, date, theme, locale, crop status.
-3. Inspect the image at full resolution.
-4. Create a new analysis ID and folder.
-5. Fill `analysis.md` from the canonical template.
-6. Fill `manifest.json` against the schema.
-7. Normalize terms using the authority hierarchy.
-8. Use current official sources when platform terminology may have changed.
-9. Separate observed, measured, sampled, inferred, proposed, and unknown claims.
-10. Produce a reconstruction specification and QA gate.
-11. Commit the completed analysis to `eiranotes/eiraUI`.
+1. Resolve the exact product identity and all reference assets.
+2. For a public app listing, enumerate every published screenshot and preview for the declared storefront, locale, platform, and device family before analysis begins.
+3. Require the published and analyzed asset counts to match; record any technically inaccessible asset as an explicit blocker or accepted limitation.
+4. Capture metadata: dimensions, source, date, theme, locale, crop status, published order, and content hash when available.
+5. Inspect every image at full resolution, including repeated, sparse, empty, modal, settings, and secondary-flow states.
+6. Create a new analysis ID and folder.
+7. Fill `analysis.md` from the canonical template.
+8. Fill `manifest.json` against the schema.
+9. Normalize terms using the authority hierarchy.
+10. Use current official sources when platform terminology may have changed.
+11. Separate observed, measured, sampled, inferred, proposed, and unknown claims.
+12. Produce a reconstruction specification and QA gate.
+13. Commit the completed analysis to `eiranotes/eiraUI`.
 
 ## 4. Mandatory output sections
 
@@ -88,6 +92,8 @@ A search result or style-gallery label is not sufficient evidence for “officia
 ## 6. Image-analysis rules
 
 - Use the original image, not a low-resolution preview, when available.
+- For public app listings, analyze the complete published set in store order; do not select only representative screenshots.
+- Record published count, analyzed count, storefront, locale, platform, device family, and unavailable assets.
 - Record image transformations.
 - Use screenshot pixels and normalized coordinates.
 - Do not assume screenshot pixels equal platform points.
@@ -136,6 +142,9 @@ implementation/
 The skill must not mark an analysis complete unless:
 
 - every important element has an ID;
+- an exact store URL or ID has been matched to the correct app and developer when applicable;
+- every public app-listing screenshot in the declared scope has a stable reference ID and has been analyzed;
+- published and analyzed reference counts match unless a recorded limitation was explicitly accepted;
 - every important term has an authority class;
 - observations and inferences are distinguishable;
 - at least one measurable rebuild directive exists for each major region;
@@ -154,4 +163,5 @@ The skill must not mark an analysis complete unless:
 - add DTCG token export;
 - add per-platform implementation adapters;
 - add duplicate-analysis detection;
+- add App Store and Google Play full-reference inventory adapters;
 - add revision and supersession handling.
