@@ -1,0 +1,12 @@
+# Local source assets not approved for public storage
+**/references/private/
+**/*.private.png
+**/*.private.jpg
+**/*.private.jpeg
+**/*.private.webp
+
+# Local analysis tooling
+.DS_Store
+__pycache__/
+*.pyc
+.venv/

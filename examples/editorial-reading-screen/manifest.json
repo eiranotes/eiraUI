@@ -1,0 +1,310 @@
+{
+  "schemaVersion": "1.0.0",
+  "analysisId": "UIR-20260808-000",
+  "status": "complete",
+  "createdAt": "2026-08-08",
+  "updatedAt": "2026-08-08",
+  "title": "Synthetic Notes — Today screen UI reference reconstruction",
+  "subject": {
+    "productName": "Synthetic Notes",
+    "productType": "app",
+    "surfaceName": "Today screen",
+    "platform": "iOS",
+    "locale": "en",
+    "theme": "light"
+  },
+  "target": {
+    "platform": "iOS",
+    "framework": "SwiftUI",
+    "purpose": "faithful-reconstruction"
+  },
+  "referenceStorage": "generated",
+  "references": [
+    {
+      "id": "REF-01",
+      "sourceType": "generated",
+      "locator": "examples/editorial-reading-screen/reference.svg",
+      "capturedAt": "2026-08-08T23:00:00+09:00",
+      "viewport": {
+        "width": 393,
+        "height": 852,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "synthetic SVG frame",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "original generated vector",
+      "storagePolicy": "generated"
+    }
+  ],
+  "classification": {
+    "interfaceArchetype": "single-object reading view",
+    "navigationModel": "persistent top-level destinations",
+    "primaryStyle": {
+      "label": "editorial UI",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "platformScope": "cross-platform visual description",
+      "aliases": [
+        "publication-inspired interface"
+      ],
+      "definingTraits": [
+        "typography-led hierarchy",
+        "large negative space",
+        "restrained interface chrome",
+        "single-column reading rhythm"
+      ]
+    },
+    "secondaryStyles": [
+      {
+        "label": "Productive Editorial Minimal",
+        "authority": "PROJECT_DEFINED",
+        "platformScope": "eiraUI",
+        "aliases": [],
+        "definingTraits": [
+          "editorial hierarchy",
+          "visible utility navigation",
+          "low ornament",
+          "progressive disclosure for secondary actions"
+        ]
+      }
+    ],
+    "rejectedLabels": [
+      {
+        "label": "glassmorphism",
+        "reason": "No translucent blurred surfaces or layered glass depth are present."
+      }
+    ]
+  },
+  "readingOrder": [
+    {
+      "order": 1,
+      "elementId": "TXT-02",
+      "mechanism": [
+        "size",
+        "isolation",
+        "upper-middle position"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "order": 2,
+      "elementId": "DEC-01",
+      "mechanism": [
+        "dark contrast",
+        "isolated upper-right position"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.95
+    }
+  ],
+  "layout": {
+    "model": "single vertical content column with persistent bottom navigation",
+    "sourceViewport": {
+      "width": 393,
+      "height": 852,
+      "unit": "px"
+    },
+    "outerInsets": {
+      "leading": 24,
+      "trailing": 24,
+      "unit": "source-px"
+    },
+    "regions": [
+      {
+        "id": "SUR-01",
+        "referenceId": "REF-01",
+        "role": "root canvas",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 393,
+          "height": 852,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "contains all regions"
+      },
+      {
+        "id": "NAV-01",
+        "referenceId": "REF-01",
+        "role": "persistent primary navigation",
+        "bbox": {
+          "x": 0,
+          "y": 776,
+          "width": 393,
+          "height": 76,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "anchored to bottom edge"
+      }
+    ]
+  },
+  "elements": [
+    {
+      "id": "TXT-02",
+      "referenceId": "REF-01",
+      "bbox": {
+        "x": 24,
+        "y": 178,
+        "width": 300,
+        "height": 112,
+        "coordinateSpace": "source-px"
+      },
+      "literalObservation": "Large left-aligned three-line serif sentence.",
+      "canonicalTerm": "display text",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "primary content and focal element",
+      "anatomy": [
+        "three lines",
+        "serif classification",
+        "left aligned"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use a semantic display role with approximately 31-unit size and 42-unit baseline step at the reference frame; preserve the three-line wrap."
+    },
+    {
+      "id": "DEC-01",
+      "referenceId": "REF-01",
+      "bbox": {
+        "x": 293,
+        "y": 82,
+        "width": 73,
+        "height": 70,
+        "coordinateSpace": "source-px"
+      },
+      "literalObservation": "Irregular dark mark with one light internal broken stroke.",
+      "canonicalTerm": "decorative ink-wash mark",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "secondary brand ornament",
+      "anatomy": [
+        "asymmetric silhouette",
+        "dark fill",
+        "light internal break"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.98,
+      "rebuildDirective": "Render as a noninteractive decorative asset; preserve asymmetry and do not replace with a smooth symmetric blob."
+    },
+    {
+      "id": "NAV-01",
+      "referenceId": "REF-01",
+      "bbox": {
+        "x": 0,
+        "y": 776,
+        "width": 393,
+        "height": 76,
+        "coordinateSpace": "source-px"
+      },
+      "literalObservation": "Three equally distributed text destinations in a persistent bottom region.",
+      "canonicalTerm": "tab bar mapping",
+      "authority": "PLATFORM_OFFICIAL",
+      "platformMapping": "iOS tab navigation",
+      "hierarchyRole": "primary navigation",
+      "interaction": "Selecting a destination changes the top-level surface.",
+      "states": [
+        "selected",
+        "unselected"
+      ],
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.78,
+      "rebuildDirective": "Use native top-level tab navigation and preserve visible labels; implement one selected destination at a time."
+    }
+  ],
+  "typography": [
+    {
+      "role": "display",
+      "elementIds": [
+        "TXT-02"
+      ],
+      "classification": "serif",
+      "estimatedSize": "31 source units",
+      "weight": "regular",
+      "lineHeight": "42 source units",
+      "tracking": "normal",
+      "alignment": "leading",
+      "evidenceStatus": "MEASURED",
+      "confidence": 1.0
+    }
+  ],
+  "palette": [
+    {
+      "tokenCandidate": "color.background.canvas",
+      "sampleLocation": "root rectangle",
+      "value": "#F5F2EA",
+      "semanticRole": "canvas background",
+      "themeBehavior": "light only in example",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 1.0
+    }
+  ],
+  "interactions": [
+    {
+      "elementId": "NAV-01",
+      "trigger": "select destination",
+      "result": "change top-level surface",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.78
+    }
+  ],
+  "reconstruction": {
+    "directive": "Rebuild a single-column editorial reading surface with one dominant serif sentence, restrained metadata, one noninteractive ink mark, and persistent native tab navigation.",
+    "layoutRules": [
+      "Use a 24-point-equivalent page inset after target-frame calibration.",
+      "Keep the main sentence in the upper-middle region.",
+      "Keep bottom navigation outside scroll content."
+    ],
+    "componentMappings": [
+      {
+        "referenceElementId": "NAV-01",
+        "targetComponent": "SwiftUI Tab",
+        "nativeOrCustom": "hybrid",
+        "customization": "Preserve the quiet label hierarchy and selected indicator without replacing native navigation semantics."
+      }
+    ],
+    "prohibitions": [
+      "No floating content cards.",
+      "No gradients or glass panels.",
+      "No additional hero image.",
+      "Do not treat the decorative mark as an action."
+    ],
+    "qa": [
+      {
+        "check": "primary focal order",
+        "target": "TXT-02 remains first, DEC-01 second",
+        "tolerance": "same squint-test order",
+        "method": "paired 25% thumbnail and grayscale comparison"
+      },
+      {
+        "check": "display line wrapping",
+        "target": "three lines at 393-point target width",
+        "tolerance": "exact line breaks",
+        "method": "target-device screenshot"
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "id": "U-01",
+      "question": "Which production serif family should replace the generic SVG font?",
+      "status": "unknown",
+      "alternatives": [
+        "New York",
+        "a licensed Korean serif family",
+        "product-specific variable serif"
+      ],
+      "evidenceNeeded": "brand typography decision and Korean glyph review",
+      "blocksRebuild": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-01",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Components",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/components/",
+      "section": "Navigation and search",
+      "verifiedAt": "2026-08-08"
+    }
+  ]
+}
