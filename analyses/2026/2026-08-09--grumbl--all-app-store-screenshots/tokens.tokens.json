@@ -1,0 +1,261 @@
+{
+  "$schema": "https://www.designtokens.org/tr/drafts/format/",
+  "meta": {
+    "analysisId": "UIR-20260809-001",
+    "product": "grumbl.",
+    "status": "proposed-reconstruction",
+    "sourceFrame": "1284x2778 px",
+    "targetCalibration": "428x926 pt at 3x",
+    "note": "Values are reconstruction tokens inferred or proposed from public App Store screenshots; they are not extracted production tokens."
+  },
+  "color": {
+    "background": {
+      "canvas": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Root archive canvas and light sheet surface."
+      },
+      "modalDimming": {
+        "$type": "color",
+        "$value": "#00000033",
+        "$description": "Proposed system-like dimming behind modal sheets."
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": "Brand, titles, active tabs, controls, and strong rules."
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "#6F6F73",
+        "$description": "Proposed minimum supporting-label gray; production contrast must be tested."
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "#8E8E93",
+        "$description": "Nonessential metadata only."
+      },
+      "onPhoto": {
+        "$type": "color",
+        "$value": "#FFFFFF",
+        "$description": "Time, calendar date, and count over adaptive image scrims."
+      }
+    },
+    "rule": {
+      "strong": {
+        "$type": "color",
+        "$value": "#000000",
+        "$description": "Major shell and section boundaries."
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "#D4D4D6",
+        "$description": "Settings rows, calendar cells, and secondary divisions."
+      }
+    },
+    "overlay": {
+      "photoMetadata": {
+        "$type": "color",
+        "$value": "#0000008C",
+        "$description": "Adaptive local backing for time/date metadata."
+      }
+    }
+  },
+  "space": {
+    "inline": {
+      "page": {
+        "$type": "dimension",
+        "$value": { "value": 22, "unit": "pt" },
+        "$description": "Shared text, masthead, and settings alignment."
+      },
+      "compact": {
+        "$type": "dimension",
+        "$value": { "value": 12, "unit": "pt" }
+      }
+    },
+    "stack": {
+      "item": {
+        "$type": "dimension",
+        "$value": { "value": 12, "unit": "pt" }
+      },
+      "section": {
+        "$type": "dimension",
+        "$value": { "value": 24, "unit": "pt" }
+      }
+    },
+    "grid": {
+      "photoGap": {
+        "$type": "dimension",
+        "$value": { "value": 1.5, "unit": "pt" },
+        "$description": "Photos contact-sheet gutter."
+      }
+    }
+  },
+  "size": {
+    "toolbar": {
+      "rowHeight": {
+        "$type": "dimension",
+        "$value": { "value": 62, "unit": "pt" }
+      },
+      "targetMinimum": {
+        "$type": "dimension",
+        "$value": { "value": 44, "unit": "pt" }
+      },
+      "glyph": {
+        "$type": "dimension",
+        "$value": { "value": 22, "unit": "pt" }
+      }
+    },
+    "tabs": {
+      "rowHeight": {
+        "$type": "dimension",
+        "$value": { "value": 38, "unit": "pt" }
+      }
+    },
+    "bottomAction": {
+      "productionHeight": {
+        "$type": "dimension",
+        "$value": { "value": 92, "unit": "pt" },
+        "$description": "Proposed content height before system bottom safe area; reference region is approximately 113 pt total."
+      }
+    },
+    "settingsRow": {
+      "minimumHeight": {
+        "$type": "dimension",
+        "$value": { "value": 56, "unit": "pt" }
+      }
+    },
+    "calendarDay": {
+      "targetMinimum": {
+        "$type": "dimension",
+        "$value": { "value": 44, "unit": "pt" }
+      }
+    }
+  },
+  "stroke": {
+    "hairline": {
+      "$type": "dimension",
+      "$value": { "value": 1, "unit": "px" }
+    },
+    "bracket": {
+      "$type": "dimension",
+      "$value": { "value": 1.25, "unit": "pt" }
+    }
+  },
+  "radius": {
+    "content": {
+      "$type": "dimension",
+      "$value": { "value": 0, "unit": "pt" }
+    },
+    "sheetTop": {
+      "$type": "string",
+      "$value": "system",
+      "$description": "Use the current platform sheet corner geometry."
+    }
+  },
+  "typography": {
+    "brand": {
+      "wordmark": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Futura-compatible geometric sans",
+          "fontSize": { "value": 28, "unit": "pt" },
+          "fontWeight": 500,
+          "letterSpacing": { "value": 2.5, "unit": "pt" },
+          "lineHeight": 1.0
+        }
+      }
+    },
+    "navigation": {
+      "tab": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Futura-compatible geometric sans",
+          "fontSize": { "value": 12, "unit": "pt" },
+          "fontWeight": 500,
+          "letterSpacing": { "value": 1.5, "unit": "pt" },
+          "lineHeight": 1.0
+        }
+      }
+    },
+    "section": {
+      "date": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Futura-compatible geometric sans",
+          "fontSize": { "value": 19, "unit": "pt" },
+          "fontWeight": 500,
+          "letterSpacing": { "value": 2.5, "unit": "pt" },
+          "lineHeight": 1.1
+        }
+      },
+      "metadata": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Helvetica Neue-compatible sans",
+          "fontSize": { "value": 11, "unit": "pt" },
+          "fontWeight": 400,
+          "letterSpacing": { "value": 1.5, "unit": "pt" },
+          "lineHeight": 1.2
+        }
+      }
+    },
+    "body": {
+      "primary": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Helvetica Neue-compatible sans",
+          "fontSize": { "value": 16, "unit": "pt" },
+          "fontWeight": 400,
+          "letterSpacing": { "value": 0, "unit": "pt" },
+          "lineHeight": 1.375
+        }
+      }
+    },
+    "control": {
+      "primary": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Futura-compatible geometric sans",
+          "fontSize": { "value": 16, "unit": "pt" },
+          "fontWeight": 500,
+          "letterSpacing": { "value": 2, "unit": "pt" },
+          "lineHeight": 1.0
+        }
+      }
+    },
+    "annotation": {
+      "serifItalic": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "Project-defined serif",
+          "fontSize": { "value": 14, "unit": "pt" },
+          "fontWeight": 600,
+          "letterSpacing": { "value": 0, "unit": "pt" },
+          "lineHeight": 1.25
+        },
+        "$description": "Observed third typographic voice. Either define one licensed family or remove this token."
+      }
+    }
+  },
+  "layout": {
+    "photoGrid": {
+      "columns": {
+        "$type": "number",
+        "$value": 3
+      },
+      "itemAspectRatio": {
+        "$type": "number",
+        "$value": 1
+      }
+    },
+    "calendar": {
+      "columns": {
+        "$type": "number",
+        "$value": 7
+      }
+    }
+  }
+}

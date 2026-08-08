@@ -1,0 +1,1383 @@
+{
+  "schemaVersion": "1.0.0",
+  "analysisId": "UIR-20260809-001",
+  "status": "complete",
+  "createdAt": "2026-08-09",
+  "updatedAt": "2026-08-09",
+  "title": "grumbl. — Complete public App Store screenshot UI reconstruction",
+  "subject": {
+    "productName": "grumbl.",
+    "productType": "app",
+    "surfaceName": "All six public iPhone App Store screenshots",
+    "platform": "iOS",
+    "locale": "en",
+    "theme": "light"
+  },
+  "target": {
+    "platform": "iOS",
+    "framework": "SwiftUI / UIKit / MapKit",
+    "purpose": "faithful-reconstruction"
+  },
+  "referenceStorage": "link_only",
+  "references": [
+    {
+      "id": "REF-01",
+      "sourceType": "url",
+      "locator": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/95/31/80/953180d2-c759-fdd2-abb8-a73a7d37b06b/grumbl_screenshot_2_1284x2778_blurred_ads.png/0x0ss.jpg",
+      "capturedAt": "2026-08-09T00:28:00+09:00",
+      "viewport": {
+        "width": 1284,
+        "height": 2778,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Apple-hosted iPhone App Store screenshot; Photos — dense date group, catch-up banner, inline ad",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "downloaded for short-lived evidence inspection; normalized to PNG locally; original not committed",
+      "storagePolicy": "link_only",
+      "sha256": "42e75f3a2078d89c5b316a2067f980cf4a86c2f6454ce1e548394332f849e8fd"
+    },
+    {
+      "id": "REF-02",
+      "sourceType": "url",
+      "locator": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/ef/91/19/ef9119f0-7490-9c7f-cfcc-b0f3bf99a5cd/grumbl_screenshot_1_1284x2778_blurred_ads.png/0x0ss.jpg",
+      "capturedAt": "2026-08-09T00:28:00+09:00",
+      "viewport": {
+        "width": 1284,
+        "height": 2778,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Apple-hosted iPhone App Store screenshot; Photos — sparse date groups and empty current-day header",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "downloaded for short-lived evidence inspection; normalized to PNG locally; original not committed",
+      "storagePolicy": "link_only",
+      "sha256": "0283007e6d08218af57afe6d068ff8292d88e8ec46f41b26f1c4ce474723477c"
+    },
+    {
+      "id": "REF-03",
+      "sourceType": "url",
+      "locator": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/d1/b9/a1/d1b9a1cf-d54a-ffa0-7458-d2b78e55bb14/grumbl_screenshot_3_1284x2778_blurred_ads.png/0x0ss.jpg",
+      "capturedAt": "2026-08-09T00:28:00+09:00",
+      "viewport": {
+        "width": 1284,
+        "height": 2778,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Apple-hosted iPhone App Store screenshot; Calendar — May 2026 thumbnail month grid",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "downloaded for short-lived evidence inspection; normalized to PNG locally; original not committed",
+      "storagePolicy": "link_only",
+      "sha256": "ca9e0c08068e147e90bac0e4baf492dd8cb18ccb3f5eb043a32deead2d74ff07"
+    },
+    {
+      "id": "REF-04",
+      "sourceType": "url",
+      "locator": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/28/a8/04/28a804f2-9aa6-9cf2-142b-8766f37f2248/grumbl_screenshot_4_1284x2778_blurred_ads.png/0x0ss.jpg",
+      "capturedAt": "2026-08-09T00:28:00+09:00",
+      "viewport": {
+        "width": 1284,
+        "height": 2778,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Apple-hosted iPhone App Store screenshot; Map — Seattle-area photo-stack annotations",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "downloaded for short-lived evidence inspection; normalized to PNG locally; original not committed",
+      "storagePolicy": "link_only",
+      "sha256": "651cb8326d81ae3a30dae112ccf19e45054fe158efab7cbcec91e21bf0459e33"
+    },
+    {
+      "id": "REF-05",
+      "sourceType": "url",
+      "locator": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/cb/5e/bc/cb5ebc5e-f2bf-d9d7-46f7-da09be3630c2/grumbl_screenshot_6_1284x2778_blurred_ads.png/0x0ss.jpg",
+      "capturedAt": "2026-08-09T00:28:00+09:00",
+      "viewport": {
+        "width": 1284,
+        "height": 2778,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Apple-hosted iPhone App Store screenshot; Scan Camera Roll — look-back range selector sheet",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "downloaded for short-lived evidence inspection; normalized to PNG locally; original not committed",
+      "storagePolicy": "link_only",
+      "sha256": "9b767b8c0d912c211f8f40afa2fab8b1ff09975d8bed9beb1e14b137432349a5"
+    },
+    {
+      "id": "REF-06",
+      "sourceType": "url",
+      "locator": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/04/bd/e7/04bde7dc-0f24-401a-2fb8-7884df49a5af/grumbl_screenshot_5_1284x2778_blurred_ads.png/0x0ss.jpg",
+      "capturedAt": "2026-08-09T00:28:00+09:00",
+      "viewport": {
+        "width": 1284,
+        "height": 2778,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Apple-hosted iPhone App Store screenshot; Settings — grouped disclosure list sheet",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "downloaded for short-lived evidence inspection; normalized to PNG locally; original not committed",
+      "storagePolicy": "link_only",
+      "sha256": "5dba7e90031dc63db4bd4fa6fdddcb888cb5b0000365bc5e5b9a197d1ca73e0d"
+    }
+  ],
+  "classification": {
+    "interfaceArchetype": "photo-first personal archive with date, calendar, map, and recipe retrieval surfaces",
+    "secondaryArchetype": "capture-first diary utility with modal import and settings tasks",
+    "navigationModel": "custom top text tab strip plus persistent bottom acquisition actions",
+    "primaryStyle": {
+      "label": "Monochrome Contact-Sheet Utility",
+      "authority": "PROJECT_DEFINED",
+      "sourceId": "SRC-01",
+      "platformScope": "grumbl. / eiraUI",
+      "aliases": [
+        "photo-first monochrome archive",
+        "contact-sheet utility UI"
+      ],
+      "definingTraits": [
+        "white archival canvas and black primary chrome",
+        "full-color user photos as the dominant content",
+        "uniform contact-sheet grids and date indexing",
+        "geometric uppercase labels with expanded tracking",
+        "hairline separators and minimal corner radius",
+        "corner-bracket framing motif for primary acquisition actions",
+        "large modal sheets for bounded utility tasks"
+      ]
+    },
+    "secondaryStyles": [
+      {
+        "label": "editorial minimalism",
+        "authority": "INDUSTRY_CONVENTIONAL",
+        "platformScope": "cross-platform visual description",
+        "aliases": [
+          "neo-editorial utility"
+        ],
+        "definingTraits": [
+          "typography-led monochrome hierarchy",
+          "large white fields",
+          "hairline print-like divisions"
+        ]
+      },
+      {
+        "label": "contact-sheet layout",
+        "authority": "INDUSTRY_CONVENTIONAL",
+        "platformScope": "photographic archive interfaces",
+        "aliases": [],
+        "definingTraits": [
+          "uniform thumbnail scale",
+          "chronological grouping",
+          "concise capture metadata",
+          "incomplete rows preserved"
+        ]
+      }
+    ],
+    "rejectedLabels": [
+      {
+        "label": "Apple tab bar",
+        "reason": "The top text destinations are custom tabs, while Camera and Library are actions rather than destinations."
+      },
+      {
+        "label": "segmented control",
+        "reason": "The destination labels do not share a segmented container and switch top-level archive surfaces."
+      },
+      {
+        "label": "masonry grid",
+        "reason": "Photos use equal square cells in fixed three-column tracks."
+      },
+      {
+        "label": "glassmorphism",
+        "reason": "Core surfaces are opaque white with no backdrop blur or layered glass depth."
+      },
+      {
+        "label": "card dashboard",
+        "reason": "The interface relies on grids, maps, lists, rules, and sheets rather than modular raised cards."
+      }
+    ]
+  },
+  "readingOrder": [
+    {
+      "order": 1,
+      "elementId": "IMG-02",
+      "mechanism": [
+        "full-color photography",
+        "area",
+        "semantic food content"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "order": 2,
+      "elementId": "TXT-03",
+      "mechanism": [
+        "uppercase date heading",
+        "isolation",
+        "leading position"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.95
+    },
+    {
+      "order": 3,
+      "elementId": "NAV-01",
+      "mechanism": [
+        "persistent top position",
+        "black contrast",
+        "brand lockup"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.95
+    },
+    {
+      "order": 4,
+      "elementId": "NAV-03",
+      "mechanism": [
+        "persistent bottom position",
+        "large whitespace",
+        "corner-bracket framing"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.92
+    }
+  ],
+  "layout": {
+    "model": "custom branded top shell, destination strip, active content panel, and persistent bottom acquisition bar; large modal sheets for utilities",
+    "sourceViewport": {
+      "width": 1284,
+      "height": 2778,
+      "unit": "px"
+    },
+    "targetViewport": {
+      "width": 428,
+      "height": 926,
+      "unit": "pt"
+    },
+    "scaleAssumption": "3 source pixels per target point",
+    "outerInsets": {
+      "leading": 22,
+      "trailing": 22,
+      "unit": "target-pt"
+    },
+    "regions": [
+      {
+        "id": "NAV-01",
+        "referenceId": "REF-01",
+        "role": "branded masthead and top toolbar",
+        "bbox": {
+          "x": 0,
+          "y": 160,
+          "width": 1284,
+          "height": 190,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "above destination strip"
+      },
+      {
+        "id": "NAV-02",
+        "referenceId": "REF-01",
+        "role": "top text destination strip",
+        "bbox": {
+          "x": 0,
+          "y": 350,
+          "width": 1284,
+          "height": 111,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "below masthead and above active panel"
+      },
+      {
+        "id": "GRP-01",
+        "referenceId": "REF-01",
+        "role": "inline missed-meal action banner",
+        "bbox": {
+          "x": 0,
+          "y": 461,
+          "width": 1284,
+          "height": 164,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "inside Photos content before date sections"
+      },
+      {
+        "id": "GRP-03",
+        "referenceId": "REF-01",
+        "role": "three-column meal grid",
+        "bbox": {
+          "x": 0,
+          "y": 748,
+          "width": 1284,
+          "height": 645,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "child of a date section"
+      },
+      {
+        "id": "NAV-03",
+        "referenceId": "REF-03",
+        "role": "persistent bottom acquisition action bar",
+        "bbox": {
+          "x": 0,
+          "y": 2438,
+          "width": 1284,
+          "height": 340,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "anchored below active panel"
+      },
+      {
+        "id": "DAT-01",
+        "referenceId": "REF-03",
+        "role": "thumbnail month calendar grid",
+        "bbox": {
+          "x": 37,
+          "y": 692,
+          "width": 1211,
+          "height": 1040,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "active Calendar panel content"
+      },
+      {
+        "id": "DAT-03",
+        "referenceId": "REF-04",
+        "role": "interactive map surface",
+        "bbox": {
+          "x": 0,
+          "y": 461,
+          "width": 1284,
+          "height": 1977,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "active Map panel content"
+      },
+      {
+        "id": "OVR-01",
+        "referenceId": "REF-05",
+        "role": "large Scan Camera Roll sheet",
+        "bbox": {
+          "x": 0,
+          "y": 185,
+          "width": 1284,
+          "height": 2593,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "modal over dimmed parent"
+      },
+      {
+        "id": "OVR-02",
+        "referenceId": "REF-06",
+        "role": "large Settings sheet",
+        "bbox": {
+          "x": 0,
+          "y": 185,
+          "width": 1284,
+          "height": 2593,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "modal over dimmed parent"
+      }
+    ]
+  },
+  "elements": [
+    {
+      "id": "NAV-01",
+      "referenceId": "REF-01",
+      "literalObservation": "A black circular brand mark and lowercase wordmark sit at leading; search, calendar, circled-check, and ellipsis icons sit at trailing.",
+      "canonicalTerm": "branded masthead and top toolbar",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "persistent identity and current-view actions",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.99,
+      "rebuildDirective": "Use a 60–64 point safe-area-aware row with a 20–22 point leading brand anchor and minimum 44-point semantic targets for each trailing action.",
+      "bbox": {
+        "x": 0,
+        "y": 160,
+        "width": 1284,
+        "height": 190,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "SwiftUI toolbar or custom safe-area header",
+      "states": [
+        "default",
+        "Photos context",
+        "Calendar/Map context",
+        "large text"
+      ]
+    },
+    {
+      "id": "IMG-01",
+      "referenceId": "REF-01",
+      "literalObservation": "A solid black circular mark has a white cutout at the upper-trailing edge.",
+      "canonicalTerm": "brand mark",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "product identity",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Render as a one-color vector, combine semantically with the wordmark, and hide the decorative shape from the accessibility tree.",
+      "anatomy": [
+        "black circle",
+        "white upper-trailing cutout"
+      ]
+    },
+    {
+      "id": "ACT-01",
+      "referenceId": "REF-01",
+      "literalObservation": "A magnifying-glass icon appears in the top toolbar.",
+      "canonicalTerm": "search button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "global retrieval action",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.98,
+      "rebuildDirective": "Use a semantic search toolbar button with a 44-by-44-point target and an explicit accessibility label.",
+      "platformMapping": "ToolbarItem / Button",
+      "states": [
+        "default",
+        "pressed",
+        "focused"
+      ]
+    },
+    {
+      "id": "ACT-02",
+      "referenceId": "REF-01",
+      "literalObservation": "A calendar-grid icon appears in the top toolbar.",
+      "canonicalTerm": "date-jump toolbar action",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "temporal retrieval action",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.82,
+      "rebuildDirective": "Confirm its behavior, then expose it as a labeled date-jump or date-picker action; do not duplicate the Calendar tab without a distinct purpose.",
+      "platformMapping": "ToolbarItem / Button"
+    },
+    {
+      "id": "ACT-03",
+      "referenceId": "REF-01",
+      "literalObservation": "A circled checkmark appears only on Photos references.",
+      "canonicalTerm": "selection-mode toolbar action",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "photo-management mode",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.72,
+      "rebuildDirective": "Confirm semantics; if it enters selection mode, expose selected state, count, cancel, and multi-select accessibility behavior.",
+      "platformMapping": "ToolbarItem / Button"
+    },
+    {
+      "id": "ACT-04",
+      "referenceId": "REF-01",
+      "literalObservation": "A horizontal ellipsis appears at the top-trailing edge.",
+      "canonicalTerm": "more menu button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "secondary actions",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.95,
+      "rebuildDirective": "Use a semantic Menu for low-frequency actions and keep primary commands visible outside the menu.",
+      "platformMapping": "Menu / ToolbarItem"
+    },
+    {
+      "id": "NAV-02",
+      "referenceId": "REF-01",
+      "literalObservation": "PHOTOS, CALENDAR, MAP, and RECIPES appear in one uppercase line separated by dots; PHOTOS is black and heavier, others gray.",
+      "canonicalTerm": "text tab strip / tab list",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "top-level archive navigation",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.99,
+      "rebuildDirective": "Implement as semantic tabs with 44-point targets and a non-color selected indicator; move meal count or allow controlled horizontal overflow before labels shrink.",
+      "bbox": {
+        "x": 45,
+        "y": 360,
+        "width": 1150,
+        "height": 90,
+        "coordinateSpace": "source-px"
+      },
+      "states": [
+        "Photos selected",
+        "Calendar selected",
+        "Map selected",
+        "Recipes selected",
+        "large text"
+      ],
+      "platformMapping": "custom tab strip backed by TabView or enum state"
+    },
+    {
+      "id": "TXT-02",
+      "referenceId": "REF-01",
+      "literalObservation": "The label 277 MEALS sits at the trailing end of the destination line.",
+      "canonicalTerm": "aggregate metadata label",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "archive total",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Treat as metadata, not navigation; move it out of the crowded tab line at constrained widths."
+    },
+    {
+      "id": "GRP-01",
+      "referenceId": "REF-01",
+      "literalObservation": "A sparkle icon, title, italic subtitle, REVIEW button, and close glyph form an inline banner.",
+      "canonicalTerm": "inline action banner",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "camera-roll catch-up prompt",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep the prompt dismissible and persistent by state; support multiline text and avoid occupying the entire first viewport after dismissal or completion.",
+      "bbox": {
+        "x": 0,
+        "y": 461,
+        "width": 1284,
+        "height": 164,
+        "coordinateSpace": "source-px"
+      },
+      "states": [
+        "eligible",
+        "dismissed",
+        "loading",
+        "no candidates",
+        "error"
+      ]
+    },
+    {
+      "id": "ACT-05",
+      "referenceId": "REF-01",
+      "literalObservation": "A thin rectangular button labeled REVIEW sits inside the catch-up banner.",
+      "canonicalTerm": "banner call-to-action button",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "opens missed-meal review",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.98,
+      "rebuildDirective": "Use native Button semantics, a 44-point target, and loading/disabled feedback tied to candidate availability."
+    },
+    {
+      "id": "GRP-02",
+      "referenceId": "REF-01",
+      "literalObservation": "A date heading and weekday sit above one or more rows of meal photos.",
+      "canonicalTerm": "date section",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "chronological grouping",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use semantic section headings and preserve source order; if headers stick, ensure contrast over scrolling photos.",
+      "states": [
+        "populated",
+        "sparse",
+        "empty today"
+      ]
+    },
+    {
+      "id": "GRP-03",
+      "referenceId": "REF-01",
+      "literalObservation": "Six equal square photos form a three-column grid with tiny gutters.",
+      "canonicalTerm": "uniform three-column collection grid",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "primary meal collection",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use equal square tracks and 1–2 point gutters; preserve left-filled incomplete rows and do not convert to masonry.",
+      "bbox": {
+        "x": 0,
+        "y": 748,
+        "width": 1284,
+        "height": 645,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "LazyVGrid or collection view"
+    },
+    {
+      "id": "IMG-02",
+      "referenceId": "REF-01",
+      "literalObservation": "Each collection item is a full-color meal photograph cropped to a square.",
+      "canonicalTerm": "meal photo thumbnail",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "primary memory evidence",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use aspect-fill cached thumbnails, native metadata overlays, stable meal IDs, and one combined accessible action per tile.",
+      "states": [
+        "default",
+        "selected",
+        "loading",
+        "missing image",
+        "grouped meal"
+      ]
+    },
+    {
+      "id": "TXT-05",
+      "referenceId": "REF-01",
+      "literalObservation": "A small white time label appears over a translucent dark patch in the photo upper-leading corner.",
+      "canonicalTerm": "time metadata badge",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "capture-time context",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use native text with an adaptive local scrim and include the time in the meal tile accessibility label."
+    },
+    {
+      "id": "GRP-04",
+      "referenceId": "REF-01",
+      "literalObservation": "A large white sponsored block with SPONSORED and AD labels appears between date sections; creative is blurred.",
+      "canonicalTerm": "inline banner-ad placement",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "monetization",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep ad disclosure explicit, avoid styling it as a personal meal, and reserve only the height required by the actual ad format.",
+      "states": [
+        "loaded",
+        "loading",
+        "unavailable",
+        "collapsed"
+      ]
+    },
+    {
+      "id": "NAV-03",
+      "referenceId": "REF-03",
+      "literalObservation": "A persistent white bottom region contains equal CAMERA and LIBRARY actions framed by detached corner strokes.",
+      "canonicalTerm": "persistent bottom action bar",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "primary meal acquisition",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep Camera and Library as actions with rectangular 44-point-plus targets; reduce excess height while preserving the corner-bracket motif.",
+      "bbox": {
+        "x": 0,
+        "y": 2438,
+        "width": 1284,
+        "height": 340,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "safeAreaInset bottom toolbar"
+    },
+    {
+      "id": "ACT-07",
+      "referenceId": "REF-01",
+      "literalObservation": "CAMERA is centered inside four detached L-shaped corner strokes.",
+      "canonicalTerm": "corner-bracket framed acquisition button",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "take new meal photo",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use native Button semantics and make the entire half-width cell tappable; brackets are decorative.",
+      "states": [
+        "default",
+        "pressed",
+        "permission denied",
+        "camera unavailable"
+      ]
+    },
+    {
+      "id": "ACT-08",
+      "referenceId": "REF-01",
+      "literalObservation": "LIBRARY is centered inside four detached L-shaped corner strokes.",
+      "canonicalTerm": "corner-bracket framed acquisition button",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "choose existing meal photo",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use native photo picker presentation, preserve the full half-width target, and handle limited-library access."
+    },
+    {
+      "id": "NAV-04",
+      "referenceId": "REF-03",
+      "literalObservation": "MAY 2026 is centered between small previous and next triangular controls.",
+      "canonicalTerm": "month pager",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "temporal navigation",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.99,
+      "rebuildDirective": "Use locale-aware month formatting and 44-point previous/next targets; announce the new month after change."
+    },
+    {
+      "id": "DAT-01",
+      "referenceId": "REF-03",
+      "literalObservation": "A seven-column six-week month matrix uses white or photo-backed cells.",
+      "canonicalTerm": "thumbnail month calendar grid",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "visual date retrieval",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Generate dates from Calendar and DateComponents, maintain 44-point day targets, and provide explicit selected/today/adjacent-month states.",
+      "bbox": {
+        "x": 37,
+        "y": 692,
+        "width": 1211,
+        "height": 1040,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "custom SwiftUI Grid"
+    },
+    {
+      "id": "DAT-02",
+      "referenceId": "REF-03",
+      "literalObservation": "Each day cell contains a day number; occupied days use a meal photo background and may show a small trailing count.",
+      "canonicalTerm": "thumbnail calendar day cell",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "day-level archive entry",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use adaptive corner scrims for date/count contrast and expose full date plus meal count semantically.",
+      "states": [
+        "empty",
+        "occupied",
+        "today",
+        "selected",
+        "adjacent month",
+        "focused"
+      ]
+    },
+    {
+      "id": "DAT-03",
+      "referenceId": "REF-04",
+      "literalObservation": "An Apple map fills the active panel between the destination strip and bottom action bar.",
+      "canonicalTerm": "interactive map surface",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "spatial meal retrieval",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use an interactive MapKit map, preserve attribution, and prefer muted emphasis so custom meal annotations remain primary.",
+      "bbox": {
+        "x": 0,
+        "y": 461,
+        "width": 1284,
+        "height": 1977,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "SwiftUI Map / MKMapView"
+    },
+    {
+      "id": "DAT-04",
+      "referenceId": "REF-04",
+      "literalObservation": "Several geographic points are represented by overlapping square food-photo frames with white borders and shadows.",
+      "canonicalTerm": "photo-stack map annotation",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "geographic meal group",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.98,
+      "rebuildDirective": "At low zoom show a representative photo plus numeric count; limit visible stack depth, define selected state, and expand progressively with zoom.",
+      "states": [
+        "clustered",
+        "selected",
+        "expanded",
+        "individual",
+        "loading"
+      ],
+      "platformMapping": "custom annotation / MKAnnotationView"
+    },
+    {
+      "id": "TXT-07",
+      "referenceId": "REF-04",
+      "literalObservation": "A bordered white label reads 228 MEALS ON THE MAP near the top center.",
+      "canonicalTerm": "map summary badge",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "aggregate spatial scope",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Clarify whether the count is total or viewport-specific and avoid obscuring map controls or labels."
+    },
+    {
+      "id": "OVR-01",
+      "referenceId": "REF-05",
+      "literalObservation": "A white surface with large rounded top corners sits over a dimmed parent screen.",
+      "canonicalTerm": "large modal sheet",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "bounded camera-roll scan task",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use a system sheet with a content-fitting detent when possible, one clear dismiss control, and progress/cancel states.",
+      "bbox": {
+        "x": 0,
+        "y": 185,
+        "width": 1284,
+        "height": 2593,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "SwiftUI sheet"
+    },
+    {
+      "id": "GRP-05",
+      "referenceId": "REF-05",
+      "literalObservation": "Four bordered rows offer mutually exclusive look-back ranges; LAST 30 DAYS has a trailing black dot.",
+      "canonicalTerm": "single-selection list / radio group",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "scan range parameter",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.99,
+      "rebuildDirective": "Make each full row selectable and expose visible selected and unselected control states with radio/check semantics.",
+      "states": [
+        "7 days",
+        "30 days selected",
+        "90 days",
+        "year",
+        "disabled"
+      ]
+    },
+    {
+      "id": "ACT-10",
+      "referenceId": "REF-05",
+      "literalObservation": "START SCAN is centered inside a wide corner-bracket frame.",
+      "canonicalTerm": "primary scan action button",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "begins on-device scan",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use a prominent semantic button, prevent duplicate starts, and replace the label with progress/cancel feedback during scanning."
+    },
+    {
+      "id": "TXT-08",
+      "referenceId": "REF-05",
+      "literalObservation": "A gray serif italic line states that the classifier is on-device with no internet or upload.",
+      "canonicalTerm": "privacy reassurance footnote",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "trust context",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Raise contrast, define the serif accent token explicitly, and keep the claim synchronized with actual implementation."
+    },
+    {
+      "id": "OVR-02",
+      "referenceId": "REF-06",
+      "literalObservation": "A large rounded white sheet over a gray backdrop contains Settings.",
+      "canonicalTerm": "large modal sheet",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "secondary configuration and tools",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use a large sheet with NavigationStack and grouped List; preserve the single-sheet return path.",
+      "bbox": {
+        "x": 0,
+        "y": 185,
+        "width": 1284,
+        "height": 2593,
+        "coordinateSpace": "source-px"
+      },
+      "platformMapping": "SwiftUI sheet + NavigationStack"
+    },
+    {
+      "id": "GRP-06",
+      "referenceId": "REF-06",
+      "literalObservation": "TOOLS, HELP, LEGAL, and ABOUT divide full-width settings rows.",
+      "canonicalTerm": "grouped disclosure list",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "settings information hierarchy",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use semantic list sections, sufficient contrast, and dynamic row heights for localization and Dynamic Type.",
+      "platformMapping": "List / Section"
+    },
+    {
+      "id": "ROW-01",
+      "referenceId": "REF-06",
+      "literalObservation": "A tracked uppercase label and a pale trailing chevron form each navigational settings row.",
+      "canonicalTerm": "navigation row with disclosure indicator",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "opens subordinate tool or document",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use NavigationLink semantics, a minimum 52–56-point row, stronger chevron contrast, and multiline support.",
+      "states": [
+        "default",
+        "pressed",
+        "focused",
+        "disabled",
+        "large text"
+      ]
+    },
+    {
+      "id": "GRP-07",
+      "referenceId": "REF-06",
+      "literalObservation": "The final About row combines brand mark, wordmark, and italic food memory · v1.2 (23) subtitle.",
+      "canonicalTerm": "about brand lockup row",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "identity and version information",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep product/version information grouped, hide decorative layers from accessibility, and deemphasize build number unless needed for support."
+    }
+  ],
+  "typography": [
+    {
+      "role": "brand wordmark",
+      "elementIds": [
+        "TXT-01"
+      ],
+      "classification": "geometric sans",
+      "estimatedSize": "25–29 target points",
+      "weight": "medium",
+      "lineHeight": "single line",
+      "tracking": "expanded, approximately 2–4 points",
+      "alignment": "leading",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.78
+    },
+    {
+      "role": "destination tab",
+      "elementIds": [
+        "NAV-02"
+      ],
+      "classification": "geometric sans uppercase",
+      "estimatedSize": "11–12 target points",
+      "weight": "selected semibold; inactive regular",
+      "lineHeight": "single line",
+      "tracking": "approximately 1.5–2.5 points",
+      "alignment": "horizontal",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.82
+    },
+    {
+      "role": "date heading",
+      "elementIds": [
+        "TXT-03"
+      ],
+      "classification": "geometric sans uppercase",
+      "estimatedSize": "18–20 target points",
+      "weight": "medium",
+      "lineHeight": "single line",
+      "tracking": "approximately 3–4 points",
+      "alignment": "leading",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.82
+    },
+    {
+      "role": "body",
+      "elementIds": [
+        "TXT-08"
+      ],
+      "classification": "neutral sans for paragraph; serif italic for reassurance",
+      "estimatedSize": "14–16 target points",
+      "weight": "regular / italic semibold",
+      "lineHeight": "approximately 20–22 points",
+      "tracking": "normal",
+      "alignment": "leading or centered",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.9
+    },
+    {
+      "role": "settings row",
+      "elementIds": [
+        "ROW-01"
+      ],
+      "classification": "geometric sans uppercase",
+      "estimatedSize": "14–16 target points",
+      "weight": "medium",
+      "lineHeight": "single line",
+      "tracking": "approximately 2–4 points",
+      "alignment": "leading",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.82
+    }
+  ],
+  "palette": [
+    {
+      "tokenCandidate": "color.background.canvas",
+      "sampleLocation": "main and sheet backgrounds",
+      "value": "approximately #FFFFFF",
+      "semanticRole": "root archival canvas",
+      "themeBehavior": "light reference only; semantic dark counterpart proposed",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.98
+    },
+    {
+      "tokenCandidate": "color.text.primary",
+      "sampleLocation": "wordmark, headings, rules, controls",
+      "value": "approximately #000000",
+      "semanticRole": "primary chrome and text",
+      "themeBehavior": "invert semantically in dark mode",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.98
+    },
+    {
+      "tokenCandidate": "color.text.secondary",
+      "sampleLocation": "inactive tabs, weekdays, section labels, body copy",
+      "value": "variable light neutral gray",
+      "semanticRole": "supporting metadata",
+      "themeBehavior": "raise contrast and calibrate semantically",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.88
+    },
+    {
+      "tokenCandidate": "color.overlay.time",
+      "sampleLocation": "time badges over meal photos",
+      "value": "black at translucent alpha",
+      "semanticRole": "local text-legibility backing",
+      "themeBehavior": "adapt to image luminance",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.98
+    },
+    {
+      "tokenCandidate": "color.content.photo",
+      "sampleLocation": "meal thumbnails",
+      "value": "unmodified user photography",
+      "semanticRole": "primary memory content",
+      "themeBehavior": "do not invert or tint",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    }
+  ],
+  "interactions": [
+    {
+      "elementId": "NAV-02",
+      "trigger": "tap a destination tab",
+      "result": "switch among Photos, Calendar, Map, and Recipes while preserving each panel state",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.96
+    },
+    {
+      "elementId": "ACT-05",
+      "trigger": "tap Review",
+      "result": "open missed-meal candidates from camera-roll scanning",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.94
+    },
+    {
+      "elementId": "IMG-02",
+      "trigger": "tap meal thumbnail",
+      "result": "open meal detail or grouped meal",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.9
+    },
+    {
+      "elementId": "ACT-07",
+      "trigger": "tap Camera",
+      "result": "open camera capture flow",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.99
+    },
+    {
+      "elementId": "ACT-08",
+      "trigger": "tap Library",
+      "result": "open photo-library picker",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.99
+    },
+    {
+      "elementId": "DAT-02",
+      "trigger": "tap a calendar day",
+      "result": "select or open meals for that day",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.9
+    },
+    {
+      "elementId": "DAT-04",
+      "trigger": "tap a photo-stack annotation",
+      "result": "select, zoom, or reveal meals in the geographic group",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.86
+    },
+    {
+      "elementId": "GRP-05",
+      "trigger": "tap a look-back row",
+      "result": "select exactly one camera-roll scan range",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.99
+    },
+    {
+      "elementId": "ACT-10",
+      "trigger": "tap Start Scan",
+      "result": "begin on-device classification and proceed to progress/review",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.94
+    },
+    {
+      "elementId": "ROW-01",
+      "trigger": "tap a settings row",
+      "result": "open the corresponding tool, help, legal, or support destination",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.98
+    }
+  ],
+  "reconstruction": {
+    "directive": "Rebuild grumbl. as a monochrome photographic contact-sheet archive with a branded top toolbar, semantic text tabs, date-grouped three-column meal grids, a thumbnail calendar, photo-stack map annotations, persistent Camera/Library actions, and large utility sheets, while correcting contrast, selected-state, localization, and Dynamic Type constraints.",
+    "layoutRules": [
+      "Calibrate the 1284 by 2778 references to an approximately 428 by 926 point compact portrait frame at 3x.",
+      "Use a 60–64 point branded masthead and a 36–40 point semantic destination strip.",
+      "Keep Photos in three equal square columns with 1–2 point gutters and left-filled incomplete rows.",
+      "Keep Camera and Library in a persistent bottom action region rather than navigation.",
+      "Generate a locale-aware seven-column month calendar with at least 44-point day targets.",
+      "Use MapKit clustering with count-bearing representative photo annotations at low zoom.",
+      "Use content-fitting Scan sheet detents and a large Settings sheet.",
+      "Move meal count out of the tab line when width or text size is constrained.",
+      "Preserve black, white, gray, hairlines, natural photos, and the corner-bracket motif."
+    ],
+    "componentMappings": [
+      {
+        "referenceElementId": "NAV-01",
+        "targetComponent": "custom safe-area header plus SwiftUI toolbar actions",
+        "nativeOrCustom": "hybrid",
+        "customization": "brand lockup, action priority, 44-point targets"
+      },
+      {
+        "referenceElementId": "NAV-02",
+        "targetComponent": "semantic custom tab strip backed by TabView or enum state",
+        "nativeOrCustom": "hybrid",
+        "customization": "text-only appearance, selected underline, width adaptation"
+      },
+      {
+        "referenceElementId": "GRP-03",
+        "targetComponent": "LazyVGrid",
+        "nativeOrCustom": "native",
+        "customization": "three square tracks, tiny gutters, cached thumbnails"
+      },
+      {
+        "referenceElementId": "NAV-03",
+        "targetComponent": "safeAreaInset bottom action bar",
+        "nativeOrCustom": "hybrid",
+        "customization": "two equal bracket-framed Buttons"
+      },
+      {
+        "referenceElementId": "DAT-01",
+        "targetComponent": "custom SwiftUI Grid generated from Calendar",
+        "nativeOrCustom": "custom",
+        "customization": "thumbnail cells, date/count scrims, today/selected states"
+      },
+      {
+        "referenceElementId": "DAT-03",
+        "targetComponent": "SwiftUI Map or MKMapView bridge",
+        "nativeOrCustom": "hybrid",
+        "customization": "muted emphasis, photo clusters, attribution-safe overlays"
+      },
+      {
+        "referenceElementId": "OVR-01",
+        "targetComponent": "SwiftUI sheet with detents",
+        "nativeOrCustom": "native",
+        "customization": "custom header and radio-style range list"
+      },
+      {
+        "referenceElementId": "GRP-06",
+        "targetComponent": "List with Sections and NavigationLinks",
+        "nativeOrCustom": "hybrid",
+        "customization": "monochrome typography and rule grammar with Dynamic Type"
+      }
+    ],
+    "tokenFile": "tokens.tokens.json",
+    "prohibitions": [
+      "Do not call Camera and Library navigation tabs.",
+      "Do not replace the three-column contact sheet with masonry.",
+      "Do not add colored app chrome, glass panels, or card dashboards.",
+      "Do not rely only on gray-versus-black weight for selected tabs.",
+      "Do not force localized or large text into the current single-line tracked widths.",
+      "Do not show photo map piles without count, selection, and zoom behavior.",
+      "Do not reproduce blurred advertising creative.",
+      "Do not add calorie, macro, streak, or social-feed modules to this visual reconstruction."
+    ],
+    "qa": [
+      {
+        "check": "public reference completeness",
+        "target": "six screenshots represented in exact App Store order",
+        "tolerance": "exact",
+        "method": "manifest/source-map comparison"
+      },
+      {
+        "check": "photo grid geometry",
+        "target": "three equal square columns with 1–2 point gutters",
+        "tolerance": "within 1 source pixel per boundary",
+        "method": "screenshot overlay and layout test"
+      },
+      {
+        "check": "tab selected state",
+        "target": "selected destination remains clear without relying only on color",
+        "tolerance": "one semantic selected tab at all times",
+        "method": "grayscale, accessibility, and state tests"
+      },
+      {
+        "check": "bottom action semantics",
+        "target": "Camera and Library are two equal buttons, not tabs",
+        "tolerance": "exact",
+        "method": "accessibility inspector and hit-test overlay"
+      },
+      {
+        "check": "calendar contrast",
+        "target": "day and count remain readable over every thumbnail fixture",
+        "tolerance": "no lost labels",
+        "method": "luminance fixture matrix"
+      },
+      {
+        "check": "map annotation legibility",
+        "target": "low-zoom clusters show representative image, count, and selected state",
+        "tolerance": "no uncontrolled deep pile overlap",
+        "method": "zoom-level screenshot matrix"
+      },
+      {
+        "check": "large text and localization",
+        "target": "no truncation or overlap in tabs, scan, settings, or bottom actions",
+        "tolerance": "no information loss",
+        "method": "Dynamic Type and pseudo-localization captures"
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "id": "U-01",
+      "question": "What exact behavior does the circled checkmark toolbar action invoke?",
+      "status": "inferred",
+      "alternatives": [
+        "meal selection mode",
+        "review completion mode",
+        "another command"
+      ],
+      "evidenceNeeded": "interaction capture or source inspection",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-02",
+      "question": "What exact behavior does the toolbar calendar icon invoke?",
+      "status": "inferred",
+      "alternatives": [
+        "jump to date",
+        "date picker",
+        "today"
+      ],
+      "evidenceNeeded": "interaction capture or source inspection",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-03",
+      "question": "Does the calendar cell count represent meals or photos?",
+      "status": "unknown",
+      "alternatives": [
+        "meal count",
+        "photo count",
+        "group count"
+      ],
+      "evidenceNeeded": "data fixture or source inspection",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-04",
+      "question": "Are map photo stacks backed by MapKit clustering or custom aggregation?",
+      "status": "unknown",
+      "alternatives": [
+        "MKClusterAnnotation",
+        "custom regional grouping"
+      ],
+      "evidenceNeeded": "zoom capture or source inspection",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-05",
+      "question": "Does the map summary count represent total located meals or current viewport meals?",
+      "status": "unknown",
+      "alternatives": [
+        "archive total",
+        "viewport count"
+      ],
+      "evidenceNeeded": "pan and zoom capture",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-06",
+      "question": "What screen and states follow Start Scan?",
+      "status": "unknown",
+      "alternatives": [
+        "progress in same sheet",
+        "review grid",
+        "new route"
+      ],
+      "evidenceNeeded": "end-to-end interaction capture",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-07",
+      "question": "Is the visible serif italic role an intentional third type family?",
+      "status": "inferred",
+      "alternatives": [
+        "named serif accent",
+        "legacy styling",
+        "rendered asset"
+      ],
+      "evidenceNeeded": "design tokens or source inspection",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-08",
+      "question": "Are the main masthead and bottom acquisition bar fixed while Photos scrolls?",
+      "status": "inferred",
+      "alternatives": [
+        "fixed",
+        "collapsing",
+        "partially scrolls"
+      ],
+      "evidenceNeeded": "scroll recording",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-09",
+      "question": "Why does an empty May 26 section header appear in the sparse Photos reference?",
+      "status": "unknown",
+      "alternatives": [
+        "today marker",
+        "empty date section",
+        "transient capture state"
+      ],
+      "evidenceNeeded": "live behavior",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-10",
+      "question": "Does the production app support dark mode?",
+      "status": "unknown",
+      "alternatives": [
+        "light-only",
+        "semantic dark mode"
+      ],
+      "evidenceNeeded": "app inspection or dark screenshots",
+      "blocksRebuild": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-01",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "grumbl. — US App Store listing",
+      "url": "https://apps.apple.com/us/app/grumbl/id6772917460",
+      "section": "Screenshots, description, version history, information",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "id": "SRC-02",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Maps",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/maps",
+      "section": "Best practices, annotations, clustering, attribution",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "id": "SRC-03",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Toolbars",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/toolbars",
+      "section": "Best practices and item grouping",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "id": "SRC-04",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Sheets",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/sheets",
+      "section": "Best practices and iOS detents",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "id": "SRC-05",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Lists and tables",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/lists-and-tables",
+      "section": "Rows, grouping, and disclosure indicators",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "id": "SRC-06",
+      "authority": "W3C_GUIDANCE",
+      "title": "WAI-ARIA Authoring Practices — Tabs Pattern",
+      "url": "https://www.w3.org/WAI/ARIA/apg/patterns/tabs/",
+      "section": "Roles, states, and keyboard interaction",
+      "verifiedAt": "2026-08-09"
+    },
+    {
+      "id": "SRC-07",
+      "authority": "STANDARD_NORMATIVE",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "section": "Target size and dragging movements",
+      "verifiedAt": "2026-08-09"
+    }
+  ]
+}
