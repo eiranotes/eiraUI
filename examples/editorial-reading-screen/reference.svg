@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="393" height="852" viewBox="0 0 393 852">
+  <rect width="393" height="852" fill="#F5F2EA"/>
+  <text x="24" y="66" font-family="Arial, sans-serif" font-size="13" fill="#716F68">SATURDAY · 8 AUG</text>
+  <path d="M316 95 C343 82 366 103 356 128 C349 145 320 150 305 131 C293 116 298 103 316 95 Z" fill="#1C2630" opacity="0.88"/>
+  <path d="M305 125 C315 135 334 140 349 132" fill="none" stroke="#F5F2EA" stroke-width="4" stroke-linecap="round" opacity="0.65"/>
+  <text x="24" y="205" font-family="Georgia, serif" font-size="31" fill="#20201D">
+    <tspan x="24" dy="0">A quiet interface</tspan>
+    <tspan x="24" dy="42">lets the sentence</tspan>
+    <tspan x="24" dy="42">remain the event.</tspan>
+  </text>
+  <text x="24" y="360" font-family="Arial, sans-serif" font-size="14" fill="#54534E">Sample Author</text>
+  <text x="24" y="386" font-family="Arial, sans-serif" font-size="12" fill="#8A877E">Notes · Editorial reference</text>
+  <line x1="24" y1="430" x2="369" y2="430" stroke="#D8D3C8" stroke-width="1"/>
+  <text x="24" y="474" font-family="Arial, sans-serif" font-size="15" fill="#363531">A short annotation can sit below the main text</text>
+  <text x="24" y="498" font-family="Arial, sans-serif" font-size="15" fill="#363531">without becoming a second visual focal point.</text>
+  <line x1="0" y1="776" x2="393" y2="776" stroke="#D8D3C8" stroke-width="1"/>
+  <text x="55" y="817" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#20201D">TODAY</text>
+  <text x="196.5" y="817" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#77746C">LIBRARY</text>
+  <text x="338" y="817" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="#77746C">SETTINGS</text>
+  <rect x="31" y="783" width="48" height="2" fill="#20201D"/>
+</svg>
