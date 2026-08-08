@@ -12,7 +12,7 @@ The repository is not a screenshot gallery. Its primary artifact is a reconstruc
 
 Every completed analysis must:
 
-1. identify the exact reference set and viewport;
+1. identify the exact reference set and viewport; for public app listings, verify the exact app identity and analyze every published screenshot in the declared scope;
 2. separate what is visible from what is inferred;
 3. decompose the surface into layout, navigation, components, typography, color, imagery, motion, and state;
 4. attach an authority class and source to each important term;
@@ -94,7 +94,7 @@ Screenshot-only analysis cannot prove hidden states, animation timing, accessibi
 
 When a user asks to analyze an app, site, or UI reference:
 
-1. collect the reference images or capture the relevant states;
+1. collect the complete reference set; for a public app listing, enumerate all published screenshots and previews before analysis;
 2. create a new analysis folder following `docs/STORAGE_CONVENTION.md`;
 3. copy the canonical template to `analysis.md`;
 4. create `manifest.json` conforming to the schema;
@@ -105,7 +105,7 @@ When a user asks to analyze an app, site, or UI reference:
 
 ## Current status
 
-- Protocol version: `1.0.0`
-- Template version: `1.0.0`
+- Protocol version: `1.1.0`
+- Template version: `1.1.0`
 - Skill status: specification draft; not yet packaged or installed
 - Terminology source registry verified: `2026-08-08`

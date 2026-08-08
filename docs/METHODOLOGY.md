@@ -1,6 +1,6 @@
 # UI Reference Analysis Methodology
 
-Version `1.0.0`
+Version `1.1.0`
 
 ## 1. Purpose
 
@@ -78,6 +78,38 @@ For each reference record:
 - whether the image is original, cropped, scaled, or compressed.
 
 A crop must not be treated as evidence of the full screen shell.
+
+### 3.4 Complete public app-listing reference rule
+
+When the subject is a released app with a public App Store, Google Play, or equivalent store listing, the public listing is a finite reference inventory rather than a pool from which to select attractive examples.
+
+Before visual analysis:
+
+1. resolve the exact product identity from the user-supplied store URL or store ID;
+2. verify the displayed app name, developer, platform, storefront, and locale;
+3. count every publicly visible screenshot and preview for the requested device family;
+4. retrieve the highest-resolution public form available;
+5. preserve the published order and assign one stable `REF` ID to every asset;
+6. record the published count, analyzed count, missing count, capture date, dimensions, and transformation status.
+
+Analyze every public screenshot, including:
+
+- repeated variants of the same surface;
+- sparse, empty, or partially populated states;
+- settings, permissions, utility sheets, and secondary flows;
+- screenshots whose primary difference is density, selection, or data distribution;
+- blurred advertising regions, while limiting analysis to placement and container treatment rather than the hidden creative.
+
+Do not stop after representative screenshots. A public app-listing analysis is incomplete when the published count and analyzed count differ, unless an asset is technically inaccessible and the limitation is explicitly recorded.
+
+When multiple storefronts or device families expose different sets, scope the inventory explicitly, for example:
+
+```text
+US App Store · iPhone · English · 6 published / 6 analyzed
+US App Store · iPad · no public screenshots
+```
+
+Byte-identical duplicates may share one visual analysis, but every published occurrence must remain in the inventory with its source alias and order. Do not substitute a similarly named app found through fuzzy search when the user supplied an exact store identity.
 
 ## 4. Measurement protocol
 
@@ -445,6 +477,7 @@ Use these only as default reconstruction tolerances, not universal standards:
 An analysis is complete only when:
 
 - reference inventory is complete;
+- for a public app listing, the exact app identity is verified and the published/analyzed screenshot counts match for the declared storefront, locale, platform, and device family;
 - observed and inferred claims are separated;
 - important elements have stable IDs;
 - important terms have authority classes and sources;
