@@ -1,9 +1,8 @@
 name: Materialize Grumbl analysis payload
 
 on:
-  push:
-    branches:
-      - agent/grumbl-ui-reference-analysis
+  pull_request:
+    branches: [main]
     paths:
       - tools/.payload/grumbl-*.b64part
       - .github/workflows/materialize-grumbl-analysis.yml
@@ -17,6 +16,7 @@ concurrency:
 
 jobs:
   materialize:
+    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
