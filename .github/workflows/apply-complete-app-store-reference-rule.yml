@@ -36,7 +36,7 @@ jobs:
               'docs/METHODOLOGY.md': [
                   'Version `1.1.0`',
                   '### 3.4 Complete public app-listing reference rule',
-                  'published and analyzed screenshot counts match',
+                  'published count and analyzed count differ',
               ],
               'skill/SKILL_SPEC_DRAFT.md': [
                   'Do not replace it with a similarly named product found through fuzzy search.',
