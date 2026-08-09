@@ -6,9 +6,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import re
 from dataclasses import asdict, dataclass
 from io import BytesIO
 from pathlib import Path
+from urllib.parse import urlsplit, urlunsplit
 
 import requests
 from PIL import Image, ImageDraw, ImageFont
@@ -17,12 +19,25 @@ from PIL import Image, ImageDraw, ImageFont
 @dataclass(frozen=True)
 class ScreenshotRecord:
     index: int
+    lookup_url: str
     source_url: str
     file: str
     width: int
     height: int
     sha256: str
     byte_length: int
+
+
+def original_asset_url(url: str) -> str:
+    """Convert Apple's public sized derivative URL to its full-size public form."""
+    parts = urlsplit(url)
+    path = re.sub(
+        r"/\d+x\d+(?:bb|sr|sc|cw|ac|ss)?\.(?:jpg|jpeg|png|webp)$",
+        "/0x0ss.png",
+        parts.path,
+        flags=re.IGNORECASE,
+    )
+    return urlunsplit((parts.scheme, parts.netloc, path, parts.query, parts.fragment))
 
 
 def main() -> int:
@@ -57,11 +72,16 @@ def main() -> int:
 
     records: list[ScreenshotRecord] = []
     seen: set[str] = set()
-    for index, url in enumerate(urls, start=1):
-        image_response = session.get(url, timeout=60)
+    for index, lookup_url in enumerate(urls, start=1):
+        source_url = original_asset_url(lookup_url)
+        image_response = session.get(source_url, timeout=60)
         image_response.raise_for_status()
         image = Image.open(BytesIO(image_response.content))
         image.load()
+        if image.width < 600 or image.height < 1000:
+            raise RuntimeError(
+                f"Full-size request returned undersized image at index {index}: {image.size} from {source_url}"
+            )
         if image.mode not in ("RGB", "RGBA"):
             image = image.convert("RGB")
         path = args.output / f"screenshot-{index:02d}.png"
@@ -73,7 +93,8 @@ def main() -> int:
         seen.add(digest)
         records.append(ScreenshotRecord(
             index=index,
-            source_url=url,
+            lookup_url=lookup_url,
+            source_url=source_url,
             file=path.name,
             width=image.width,
             height=image.height,
@@ -81,7 +102,7 @@ def main() -> int:
             byte_length=len(data),
         ))
 
-    thumb_width = 280
+    thumb_width = 320
     thumbs: list[Image.Image] = []
     for record in records:
         image = Image.open(args.output / record.file).convert("RGB")
@@ -89,7 +110,7 @@ def main() -> int:
         thumbs.append(image.resize((thumb_width, height), Image.Resampling.LANCZOS))
     columns = 3
     rows = (len(thumbs) + columns - 1) // columns
-    label_height = 44
+    label_height = 52
     cell_height = max(item.height for item in thumbs) + label_height
     sheet = Image.new("RGB", (columns * thumb_width, rows * cell_height), "white")
     draw = ImageDraw.Draw(sheet)
@@ -98,7 +119,7 @@ def main() -> int:
         x = (offset % columns) * thumb_width
         y = (offset // columns) * cell_height
         sheet.paste(thumb, (x, y))
-        draw.text((x + 10, y + thumb.height + 12), f"REF-{offset + 1:02d}", fill="black", font=font)
+        draw.text((x + 10, y + thumb.height + 14), f"REF-{offset + 1:02d}", fill="black", font=font)
     sheet.save(args.output / "contact-sheet.jpg", quality=92, optimize=True)
 
     metadata = {
