@@ -1,0 +1,1399 @@
+{
+  "schemaVersion": "1.0.0",
+  "analysisId": "UIR-20260817-001",
+  "status": "complete",
+  "createdAt": "2026-08-17",
+  "updatedAt": "2026-08-17",
+  "title": "Cool Cat's Café — Behance mobile ordering concept reconstruction",
+  "subject": {
+    "productName": "Cool Cat's Café",
+    "productType": "app",
+    "surfaceName": "Four public consumer mobile screens and POS ecosystem context",
+    "platform": "iOS concept",
+    "locale": "en",
+    "theme": "mixed"
+  },
+  "target": {
+    "platform": "iOS",
+    "framework": "SwiftUI",
+    "purpose": "selective-borrowing"
+  },
+  "referenceStorage": "link_only",
+  "references": [
+    {
+      "id": "REF-01",
+      "sourceType": "url",
+      "locator": "https://www.behance.net/gallery/227587773/Cool-Cats-Brand-identity-Coffee-Shop",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 1440,
+        "height": 1000,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Headless Chromium full-project scroll capture; document height 15,906 px",
+      "locale": "en",
+      "theme": "mixed",
+      "transformation": "Complete public page scrolled to stable end; 15 unique visual basenames identified from 46 responsive assets",
+      "storagePolicy": "link_only",
+      "sha256": "d6061e02780caeae511a56efa8fb72ce701758cc9058bd6c1b42925ca9e495dd"
+    },
+    {
+      "id": "REF-02",
+      "sourceType": "url",
+      "locator": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a36aed227587773.6842aa7d3e062.gif",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 2000,
+        "height": 1456,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Behance public animated project module",
+      "locale": "en",
+      "theme": "mixed",
+      "transformation": "None; original public GIF, 86 frames, 4,000 ms",
+      "storagePolicy": "link_only",
+      "sha256": "15adabe4561edf8affb7341aeefba155904f4916c3bff4cf6ba19cdd2d276d10"
+    },
+    {
+      "id": "REF-03",
+      "sourceType": "video-frame",
+      "locator": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a36aed227587773.6842aa7d3e062.gif#frame=55&crop=207,251,433,940",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 433,
+        "height": 940,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Derived marketing panel; exact native device viewport unknown",
+      "locale": "en",
+      "theme": "dark",
+      "transformation": "Frame 55 extracted and cropped to the complete branded landing panel",
+      "storagePolicy": "link_only",
+      "sha256": "d4e0557664fc45e025211e11a7b571f156e263f2f4464af663904260e61ac0d8"
+    },
+    {
+      "id": "REF-04",
+      "sourceType": "video-frame",
+      "locator": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a36aed227587773.6842aa7d3e062.gif#frame=0&crop=1278,251,433,940",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 433,
+        "height": 940,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Derived marketing panel; exact native device viewport unknown",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "Frame 0 extracted and cropped to the complete onboarding panel",
+      "storagePolicy": "link_only",
+      "sha256": "75f98e570919d380a721d36281232f4e289a449495367bf95bbd2678ec1780fd"
+    },
+    {
+      "id": "REF-05",
+      "sourceType": "video-frame",
+      "locator": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a36aed227587773.6842aa7d3e062.gif#frame=55&crop=1196,251,433,940",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 433,
+        "height": 940,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Derived marketing panel; exact native device viewport unknown",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "Frame 55 extracted and cropped to the complete menu-discovery panel",
+      "storagePolicy": "link_only",
+      "sha256": "312b9679f7598969dd59a52a3f50608910aa4df4637680111058c3ec433ebd1d"
+    },
+    {
+      "id": "REF-06",
+      "sourceType": "video-frame",
+      "locator": "https://mir-s3-cdn-cf.behance.net/project_modules/source/a36aed227587773.6842aa7d3e062.gif#frame=0&crop=290,251,433,940",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 433,
+        "height": 940,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Derived marketing panel; exact native device viewport unknown",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "Frame 0 extracted and cropped to the complete product-detail panel",
+      "storagePolicy": "link_only",
+      "sha256": "252c4cd7a1f4ddd733f6812f9ccd30d8f396cdb08bb2873be2060051e5a59bb6"
+    },
+    {
+      "id": "REF-07",
+      "sourceType": "url",
+      "locator": "https://mir-s3-cdn-cf.behance.net/project_modules/2800_webp/95a35c227587773.6842aa7d40b50.png",
+      "capturedAt": "2026-08-17T19:34:13+09:00",
+      "viewport": {
+        "width": 2800,
+        "height": 1824,
+        "unit": "px"
+      },
+      "deviceOrBrowser": "Behance public project module shown in café POS mockup",
+      "locale": "en",
+      "theme": "light",
+      "transformation": "Highest-resolution responsive public derivative resolved; no crop",
+      "storagePolicy": "link_only",
+      "sha256": "17eef18711aa6dff3877aff8db688dd868f67730fa96fb33a12d421d963bdd9b"
+    }
+  ],
+  "classification": {
+    "interfaceArchetype": "brand-led café ordering and booking gateway with configurable product detail",
+    "secondaryArchetype": "master-detail POS order-management ecosystem",
+    "navigationModel": "local task navigation; no persistent consumer tab shell is shown",
+    "primaryStyle": {
+      "label": "Playful Monoline Café Commerce",
+      "authority": "PROJECT_DEFINED",
+      "platformScope": "eiraUI",
+      "aliases": [
+        "illustration-led café ordering UI",
+        "mascot-driven editorial commerce"
+      ],
+      "definingTraits": [
+        "saturated cobalt and warm cream duotone shell",
+        "custom monoline cat illustrations and mascot seal",
+        "irregular display wordmark plus handwritten brand microcopy",
+        "neutral sans-serif functional commerce text",
+        "flat rounded outline controls",
+        "realistic product photography only at product-decision points"
+      ]
+    },
+    "secondaryStyles": [
+      {
+        "label": "Illustration-led brand UI",
+        "authority": "INDUSTRY_CONVENTIONAL",
+        "platformScope": "cross-platform",
+        "aliases": [],
+        "definingTraits": [
+          "custom illustration carries identity and tone",
+          "functional UI remains structurally sparse"
+        ]
+      },
+      {
+        "label": "Editorial commerce",
+        "authority": "INDUSTRY_CONVENTIONAL",
+        "platformScope": "cross-platform",
+        "aliases": [],
+        "definingTraits": [
+          "playful copy frames transactional actions",
+          "curated collections coexist with catalog browse"
+        ]
+      },
+      {
+        "label": "High-contrast duotone brand system",
+        "authority": "INDUSTRY_CONVENTIONAL",
+        "platformScope": "cross-touchpoint",
+        "aliases": [],
+        "definingTraits": [
+          "cobalt and cream dominate app, packaging, print, and POS",
+          "black or cream monoline art provides contrast"
+        ]
+      }
+    ],
+    "rejectedLabels": [
+      {
+        "label": "glassmorphism",
+        "reason": "No translucent blur or layered glass surfaces are visible."
+      },
+      {
+        "label": "neobrutalism",
+        "reason": "Borders are thin and restrained rather than heavy, raw, or deliberately anti-polished."
+      },
+      {
+        "label": "skeuomorphism",
+        "reason": "Illustrations are brand assets, not material simulations or literal physical controls."
+      },
+      {
+        "label": "bento UI",
+        "reason": "The mobile surfaces do not use a modular dashboard grid."
+      },
+      {
+        "label": "food-delivery marketplace UI",
+        "reason": "No multi-vendor, map, promotion-grid, or persistent delivery shell is shown."
+      }
+    ]
+  },
+  "readingOrder": [
+    {
+      "order": 1,
+      "elementId": "IMG-01",
+      "mechanism": [
+        "scale",
+        "high contrast",
+        "upper placement"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "order": 2,
+      "elementId": "IMG-02",
+      "mechanism": [
+        "large illustration",
+        "central placement"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "order": 3,
+      "elementId": "GRP-01",
+      "mechanism": [
+        "bottom placement",
+        "paired controls"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 0.98
+    },
+    {
+      "order": 4,
+      "elementId": "GRP-02",
+      "mechanism": [
+        "repetition",
+        "full-width rounded rows"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "order": 5,
+      "elementId": "GRP-04",
+      "mechanism": [
+        "table alignment",
+        "price and active steppers"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "order": 6,
+      "elementId": "ACT-11",
+      "mechanism": [
+        "filled cobalt",
+        "bottom anchoring",
+        "transactional label"
+      ],
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    }
+  ],
+  "layout": {
+    "model": "four separate compact mobile surfaces presented inside an animated horizontal marketing carousel; consumer screens use one-column vertical stacks",
+    "sourceViewport": {
+      "width": 433,
+      "height": 940,
+      "unit": "px"
+    },
+    "outerInsets": {
+      "observed": "approximately 24–32 source px",
+      "proposedCompactTarget": "20–24 pt"
+    },
+    "regions": [
+      {
+        "id": "SUR-01",
+        "referenceId": "REF-03",
+        "role": "branded gateway root",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 433,
+          "height": 940,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "contains wordmark, mascot, tagline, and route actions"
+      },
+      {
+        "id": "SUR-02",
+        "referenceId": "REF-04",
+        "role": "onboarding page",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 433,
+          "height": 940,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "contains illustration, indicator, copy, and bottom actions"
+      },
+      {
+        "id": "SUR-03",
+        "referenceId": "REF-05",
+        "role": "menu discovery root",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 433,
+          "height": 940,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "contains brand seal, browse rows, watermark, and curation CTA"
+      },
+      {
+        "id": "SUR-04",
+        "referenceId": "REF-06",
+        "role": "product detail root",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 433,
+          "height": 940,
+          "coordinateSpace": "source-px"
+        },
+        "relationship": "contains product configuration and order action"
+      }
+    ]
+  },
+  "elements": [
+    {
+      "id": "SUR-01",
+      "referenceId": "REF-03",
+      "literalObservation": "A saturated cobalt field fills the entire mobile panel.",
+      "canonicalTerm": "full-bleed branded gateway",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "root brand surface",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use the cobalt brand field as an opaque root surface; do not reproduce the gray Behance backdrop or device mockup."
+    },
+    {
+      "id": "IMG-01",
+      "referenceId": "REF-03",
+      "literalObservation": "A large cream irregular COOL CAT'S wordmark occupies the upper portion.",
+      "canonicalTerm": "custom display wordmark asset",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "primary brand identifier",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Render as an authorized vector/raster asset and expose the café name separately to accessibility."
+    },
+    {
+      "id": "IMG-02",
+      "referenceId": "REF-03",
+      "literalObservation": "A cream monoline cat in sunglasses carries a takeaway drink and surfboard.",
+      "canonicalTerm": "mascot hero illustration",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "primary visual focal object",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep the illustration decorative and scalable; do not decompose its strokes into accessibility elements."
+    },
+    {
+      "id": "TXT-01",
+      "referenceId": "REF-03",
+      "literalObservation": "A handwritten line reads come for the Brew, Stay for the vibes.",
+      "canonicalTerm": "handwritten brand tagline",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "tone-setting supporting copy",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Reserve handwriting for brand accent copy and provide the same phrase as native accessible text."
+    },
+    {
+      "id": "GRP-01",
+      "referenceId": "REF-03",
+      "literalObservation": "Two equal outlined capsule controls are labeled Bookings and Menu.",
+      "canonicalTerm": "dual-route action group",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "primary route selection",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use two semantic buttons; assign filled versus outlined hierarchy once the repeat-use primary route is confirmed."
+    },
+    {
+      "id": "ACT-01",
+      "referenceId": "REF-03",
+      "literalObservation": "The leading outline capsule is labeled Bookings.",
+      "canonicalTerm": "outline capsule button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "booking route",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Label with an action verb such as Book a table where localization permits; include pressed, loading, and unavailable states.",
+      "states": [
+        "default",
+        "pressed",
+        "loading",
+        "unavailable"
+      ]
+    },
+    {
+      "id": "ACT-02",
+      "referenceId": "REF-03",
+      "literalObservation": "The trailing outline capsule is labeled Menu.",
+      "canonicalTerm": "outline capsule button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "menu route",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use a 44-point minimum target and consider a filled treatment when Menu is the primary repeat-use route.",
+      "states": [
+        "default",
+        "pressed",
+        "loading",
+        "unavailable"
+      ]
+    },
+    {
+      "id": "SUR-02",
+      "referenceId": "REF-04",
+      "literalObservation": "A warm-cream first-run page contains illustration, copy, pagination, Skip, and Next.",
+      "canonicalTerm": "paged onboarding surface",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "first-run education",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep onboarding optional, finite, locally persisted, and absent on ordinary repeat launches."
+    },
+    {
+      "id": "IMG-03",
+      "referenceId": "REF-04",
+      "literalObservation": "A large black monoline scene shows a cat riding a dog to reach a coffee machine.",
+      "canonicalTerm": "onboarding hero illustration",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "visual explanation and brand tone",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Scale the illustration before reducing functional text; hide decorative strokes from accessibility."
+    },
+    {
+      "id": "NAV-01",
+      "referenceId": "REF-04",
+      "literalObservation": "One dark line and two pale dots indicate the first of three pages.",
+      "canonicalTerm": "page indicator",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "pagination position",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Expose current page and total semantically; do not rely only on line/dot color differences.",
+      "states": [
+        "page 1",
+        "page 2",
+        "page 3"
+      ]
+    },
+    {
+      "id": "TXT-02",
+      "referenceId": "REF-04",
+      "literalObservation": "The heading reads Cool Cat's Club.",
+      "canonicalTerm": "onboarding heading",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "page identity",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use native heading text with Dynamic Type."
+    },
+    {
+      "id": "TXT-03",
+      "referenceId": "REF-04",
+      "literalObservation": "A short sentence describes favourite coffee and bites in one place.",
+      "canonicalTerm": "value-proposition body copy",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "onboarding explanation",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep to one or two lines at default size and allow wrapping at large text sizes."
+    },
+    {
+      "id": "ACT-03",
+      "referenceId": "REF-04",
+      "literalObservation": "Skip appears as a blue text action at lower leading.",
+      "canonicalTerm": "secondary dismissal button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "onboarding exit",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep Skip available on every page and preserve a 44-point target."
+    },
+    {
+      "id": "ACT-04",
+      "referenceId": "REF-04",
+      "literalObservation": "Next appears inside a compact filled cobalt rounded control at lower trailing.",
+      "canonicalTerm": "primary pagination button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "advance onboarding",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use a 44-point target, pressed state, and a final-page verb that enters the actual task.",
+      "states": [
+        "default",
+        "pressed",
+        "final page"
+      ]
+    },
+    {
+      "id": "SUR-03",
+      "referenceId": "REF-05",
+      "literalObservation": "A warm-cream menu landing contains a seal, four rows, watermark, and bottom cobalt panel.",
+      "canonicalTerm": "menu discovery landing",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "catalog entry surface",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Build as a vertical browse surface with separated curated and taxonomy sections."
+    },
+    {
+      "id": "IMG-04",
+      "referenceId": "REF-05",
+      "literalObservation": "A circular cat seal with surrounding COOL CAT'S CLUB and BREWS BITES text is centered near the top.",
+      "canonicalTerm": "brand seal",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "compact product identity",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Render as a compact asset; provide one accessible brand label and hide decorative lettering if duplicated."
+    },
+    {
+      "id": "GRP-02",
+      "referenceId": "REF-05",
+      "literalObservation": "Four outlined rounded rows form the main navigation list.",
+      "canonicalTerm": "category navigation list",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "menu browse destinations",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use full-row semantic buttons with 64–72 point minimum height and 16–20 point gaps."
+    },
+    {
+      "id": "ROW-01",
+      "referenceId": "REF-05",
+      "literalObservation": "Recommended is paired with copy about choices by Sir Edward the third.",
+      "canonicalTerm": "editorial recommendation collection row",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "curated collection",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Place under a Curated for you section rather than presenting it as a product taxonomy peer."
+    },
+    {
+      "id": "ROW-02",
+      "referenceId": "REF-05",
+      "literalObservation": "Popular is paired with copy about an Instagram-friendly choice.",
+      "canonicalTerm": "popularity-ranked collection row",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "popular collection",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Place with editorial collections and define the ranking/data source."
+    },
+    {
+      "id": "ROW-03",
+      "referenceId": "REF-05",
+      "literalObservation": "Food is presented as a rounded row with supporting copy.",
+      "canonicalTerm": "product-category navigation row",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "catalog taxonomy",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Place under Browse the menu and navigate to a food product collection."
+    },
+    {
+      "id": "ROW-04",
+      "referenceId": "REF-05",
+      "literalObservation": "Beverages is presented as a rounded row with coffee, tea, and kombucha copy.",
+      "canonicalTerm": "product-category navigation row",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "catalog taxonomy",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Place under Browse the menu and keep the edge doodle outside text and hit regions."
+    },
+    {
+      "id": "DEC-01",
+      "referenceId": "REF-05",
+      "literalObservation": "A large very pale cat-head graphic sits behind the lower content.",
+      "canonicalTerm": "decorative background watermark",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "low-priority brand texture",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep noninteractive, low contrast, and hidden from accessibility."
+    },
+    {
+      "id": "ACT-05",
+      "referenceId": "REF-05",
+      "literalObservation": "A cobalt rounded panel reads Cool Cat's Curation and asks for the lead on making dishes with a twist.",
+      "canonicalTerm": "branded customization or curation CTA",
+      "authority": "PROJECT_DEFINED",
+      "hierarchyRole": "custom-service entry",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.76,
+      "rebuildDirective": "Do not implement until its destination and user outcome are defined; use an explicit action verb."
+    },
+    {
+      "id": "SUR-04",
+      "referenceId": "REF-06",
+      "literalObservation": "A cream product page includes navigation, product information, variants, photo, note, and order CTA.",
+      "canonicalTerm": "product detail screen",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "product configuration surface",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Build as a scrollable product configuration with a safe-area anchored order action."
+    },
+    {
+      "id": "ACT-06",
+      "referenceId": "REF-06",
+      "literalObservation": "A blue back arrow sits at upper leading.",
+      "canonicalTerm": "back-navigation button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "return navigation",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use native navigation semantics and at least a 44-point hit region."
+    },
+    {
+      "id": "ACT-07",
+      "referenceId": "REF-06",
+      "literalObservation": "An outline heart sits at upper trailing.",
+      "canonicalTerm": "favorite toggle",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "preference state",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Implement selected and unselected states with non-color semantics and accessible value.",
+      "states": [
+        "unselected",
+        "selected",
+        "saving",
+        "error"
+      ]
+    },
+    {
+      "id": "GRP-03",
+      "referenceId": "REF-06",
+      "literalObservation": "The product title and one paragraph identify Vietnamese Cold Coffee.",
+      "canonicalTerm": "product identity block",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "primary product information",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use native title and body text, permit wrapping, and avoid baking copy into the image."
+    },
+    {
+      "id": "GRP-04",
+      "referenceId": "REF-06",
+      "literalObservation": "Small, Medium, and Large rows show volume, calories, price, and quantity controls.",
+      "canonicalTerm": "size and variant matrix",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "variant selection and quantity",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use adaptive rows that reflow metadata beneath the variant name at large text sizes."
+    },
+    {
+      "id": "ACT-08",
+      "referenceId": "REF-06",
+      "literalObservation": "The Small row shows an Add control.",
+      "canonicalTerm": "variant add button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "add one variant",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Bind to the same cart draft as all steppers and use a 44-point minimum target."
+    },
+    {
+      "id": "ACT-09",
+      "referenceId": "REF-06",
+      "literalObservation": "Medium and Large rows show minus, a number, and plus in cobalt controls.",
+      "canonicalTerm": "inline quantity stepper",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "adjust variant quantity",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Derive quantity from CartDraft; expose decrement and increment labels, limits, and disabled states.",
+      "states": [
+        "zero",
+        "positive",
+        "maximum",
+        "sold out"
+      ]
+    },
+    {
+      "id": "IMG-05",
+      "referenceId": "REF-06",
+      "literalObservation": "A realistic cold-coffee photograph occupies the lower middle of the screen.",
+      "canonicalTerm": "product hero image",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "purchase evidence",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use an aspect-preserving product asset and constrain its height so functional configuration remains visible."
+    },
+    {
+      "id": "ACT-10",
+      "referenceId": "REF-06",
+      "literalObservation": "A pale rectangular field invites comments to customize the drink.",
+      "canonicalTerm": "customization note field",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "freeform order note",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.96,
+      "rebuildDirective": "Provide a persistent visible label, adequate contrast, validation, and clear single- or multiline behavior."
+    },
+    {
+      "id": "ACT-11",
+      "referenceId": "REF-06",
+      "literalObservation": "A cobalt rounded control reads Add to order - Rs. 850.",
+      "canonicalTerm": "anchored add-to-order button",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "primary transaction",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Derive label, item count, enabled state, and subtotal from one CartDraft and keep the button above the safe area.",
+      "states": [
+        "disabled",
+        "enabled",
+        "adding",
+        "success",
+        "error"
+      ]
+    },
+    {
+      "id": "DAT-01",
+      "referenceId": "REF-06",
+      "literalObservation": "The order action includes the visible total Rs. 850.",
+      "canonicalTerm": "calculated order subtotal",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "transaction feedback",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.94,
+      "rebuildDirective": "Never store independently from quantities and unit prices; test the exact subtotal invariant."
+    },
+    {
+      "id": "SUR-05",
+      "referenceId": "REF-07",
+      "literalObservation": "A staff interface displays a navigation rail, order list, and selected order details.",
+      "canonicalTerm": "master-detail POS workspace",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "staff order-management surface",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Keep as a separate desktop/tablet product with shared brand tokens but role-specific density."
+    },
+    {
+      "id": "NAV-02",
+      "referenceId": "REF-07",
+      "literalObservation": "A cobalt left rail contains Dashboard, Food & Drinks, Membership, Orders, and Settings.",
+      "canonicalTerm": "primary navigation rail",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "staff destination switching",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Use persistent pointer/keyboard navigation and an explicit selected destination."
+    },
+    {
+      "id": "GRP-05",
+      "referenceId": "REF-07",
+      "literalObservation": "A middle column lists multiple order summaries with one selected.",
+      "canonicalTerm": "order queue",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "master collection",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Support status, time, payment, selection, keyboard movement, loading, and empty states."
+    },
+    {
+      "id": "GRP-06",
+      "referenceId": "REF-07",
+      "literalObservation": "The right panel shows Order #24, status, customer, payment, items, and total.",
+      "canonicalTerm": "order detail inspector",
+      "authority": "INDUSTRY_CONVENTIONAL",
+      "hierarchyRole": "selected order detail",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Bind to a structured Order object shared contractually with submitted consumer cart data."
+    },
+    {
+      "id": "ACT-12",
+      "referenceId": "REF-07",
+      "literalObservation": "A wide blue action reads Print Customer's Invoice.",
+      "canonicalTerm": "primary invoice action",
+      "authority": "PLATFORM_OFFICIAL",
+      "hierarchyRole": "staff output action",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0,
+      "rebuildDirective": "Provide printing progress, success, and failure feedback and preserve keyboard access."
+    }
+  ],
+  "typography": [
+    {
+      "role": "custom display wordmark",
+      "elementIds": [
+        "IMG-01"
+      ],
+      "classification": "custom irregular uppercase display asset",
+      "estimatedSize": "asset-scaled; approximately upper 30% of landing",
+      "weight": "not applicable",
+      "lineHeight": "asset",
+      "tracking": "custom",
+      "alignment": "center",
+      "evidenceStatus": "OBSERVED",
+      "confidence": 1.0
+    },
+    {
+      "role": "handwritten brand accent",
+      "elementIds": [
+        "TXT-01"
+      ],
+      "classification": "custom handwriting/script",
+      "estimatedSize": "propose 16–18 pt",
+      "weight": "regular",
+      "lineHeight": "1.2–1.3",
+      "tracking": "custom",
+      "alignment": "center",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.78
+    },
+    {
+      "role": "product and onboarding heading",
+      "elementIds": [
+        "TXT-02",
+        "GRP-03"
+      ],
+      "classification": "neutral geometric sans",
+      "estimatedSize": "propose 24–28 pt",
+      "weight": "bold or semibold",
+      "lineHeight": "1.1–1.2",
+      "tracking": "normal",
+      "alignment": "leading or center by surface",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.82
+    },
+    {
+      "role": "category heading",
+      "elementIds": [
+        "ROW-01",
+        "ROW-02",
+        "ROW-03",
+        "ROW-04"
+      ],
+      "classification": "neutral sans",
+      "estimatedSize": "propose 17–19 pt",
+      "weight": "bold",
+      "lineHeight": "1.1",
+      "tracking": "normal",
+      "alignment": "leading",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.84
+    },
+    {
+      "role": "body and descriptions",
+      "elementIds": [
+        "TXT-03",
+        "GRP-03",
+        "ROW-01",
+        "ROW-02",
+        "ROW-03",
+        "ROW-04"
+      ],
+      "classification": "neutral sans",
+      "estimatedSize": "propose 14–16 pt",
+      "weight": "regular",
+      "lineHeight": "1.3–1.45",
+      "tracking": "normal",
+      "alignment": "leading or centered",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.82
+    },
+    {
+      "role": "price and quantity",
+      "elementIds": [
+        "GRP-04",
+        "DAT-01"
+      ],
+      "classification": "neutral sans numeric",
+      "estimatedSize": "propose 15–17 pt",
+      "weight": "bold",
+      "lineHeight": "single line",
+      "tracking": "normal",
+      "alignment": "tabular columns",
+      "evidenceStatus": "MEASURED",
+      "confidence": 0.86
+    }
+  ],
+  "palette": [
+    {
+      "tokenCandidate": "color.brand.cobalt",
+      "sampleLocation": "landing background and primary CTAs",
+      "value": "#002A8B",
+      "semanticRole": "brand field and primary action",
+      "themeBehavior": "opaque light-theme brand color; dark-theme variant must be recalibrated",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.99
+    },
+    {
+      "tokenCandidate": "color.brand.cream",
+      "sampleLocation": "onboarding, menu, and product backgrounds",
+      "value": "#F8F0E2",
+      "semanticRole": "warm commerce canvas and text-on-cobalt",
+      "themeBehavior": "light theme; propose warm near-black counterpart for dark mode",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.99
+    },
+    {
+      "tokenCandidate": "color.ink.primary",
+      "sampleLocation": "functional headings and body",
+      "value": "approximately #28292F",
+      "semanticRole": "primary functional text",
+      "themeBehavior": "semantic inversion",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.82
+    },
+    {
+      "tokenCandidate": "color.surface.input",
+      "sampleLocation": "customization note field",
+      "value": "approximately #E3D9C8",
+      "semanticRole": "editable field surface",
+      "themeBehavior": "increase contrast in production",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.78
+    },
+    {
+      "tokenCandidate": "color.line.outline",
+      "sampleLocation": "landing buttons and category rows",
+      "value": "charcoal at reduced emphasis",
+      "semanticRole": "outline controls",
+      "themeBehavior": "semantic outline with contrast validation",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.78
+    },
+    {
+      "tokenCandidate": "color.backdrop.mockup",
+      "sampleLocation": "Behance carousel background",
+      "value": "approximately #E1E2E6",
+      "semanticRole": "marketing presentation only",
+      "themeBehavior": "must not become an app token",
+      "evidenceStatus": "SAMPLED",
+      "confidence": 0.98
+    }
+  ],
+  "interactions": [
+    {
+      "elementId": "ACT-01",
+      "trigger": "tap Bookings",
+      "result": "open the booking flow; destination is not shown",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.94
+    },
+    {
+      "elementId": "ACT-02",
+      "trigger": "tap Menu",
+      "result": "open menu discovery",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.97
+    },
+    {
+      "elementId": "ACT-03",
+      "trigger": "tap Skip",
+      "result": "dismiss first-run onboarding",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.99
+    },
+    {
+      "elementId": "ACT-04",
+      "trigger": "tap Next",
+      "result": "advance to the next onboarding page",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.99
+    },
+    {
+      "elementId": "ROW-01",
+      "trigger": "tap Recommended",
+      "result": "open a recommended product collection",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.95
+    },
+    {
+      "elementId": "ROW-02",
+      "trigger": "tap Popular",
+      "result": "open a popularity-ranked product collection",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.95
+    },
+    {
+      "elementId": "ROW-03",
+      "trigger": "tap Food",
+      "result": "open food products",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.98
+    },
+    {
+      "elementId": "ROW-04",
+      "trigger": "tap Beverages",
+      "result": "open beverage products",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.98
+    },
+    {
+      "elementId": "ACT-07",
+      "trigger": "tap favorite",
+      "result": "toggle saved/favorite state",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.96
+    },
+    {
+      "elementId": "ACT-09",
+      "trigger": "tap minus or plus",
+      "result": "change one variant quantity and recalculate subtotal",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.99
+    },
+    {
+      "elementId": "ACT-11",
+      "trigger": "tap Add to order",
+      "result": "submit selected variant quantities to the cart/order draft",
+      "evidenceStatus": "INFERRED",
+      "confidence": 0.97
+    }
+  ],
+  "reconstruction": {
+    "directive": "Rebuild the four-screen consumer concept as a deterministic café-ordering flow that preserves the cobalt/cream illustration system while separating brand storytelling, merchandising collections, catalog taxonomy, and cart state.",
+    "layoutRules": [
+      "Calibrate the 433×940 marketing panels proportionally to a 390×844 pt compact iPhone target rather than claiming a native source viewport.",
+      "Use 20–24 pt page insets, 44 pt minimum control targets, 48–52 pt primary CTA height, and 64–72 pt category rows.",
+      "Keep the landing full cobalt and other consumer screens warm cream.",
+      "Make Menu the filled primary route when repeat ordering is the main job; keep Bookings secondary unless product evidence says otherwise.",
+      "Keep onboarding optional, at most three pages, and absent after local completion.",
+      "Separate Recommended/Popular under a curated section and Food/Beverages under catalog browse.",
+      "Keep decorative illustrations and watermark outside text and hit regions.",
+      "Build product variants as adaptive rows and derive all quantities and subtotal from one CartDraft.",
+      "Anchor the add-to-order CTA above the safe area without covering scroll content.",
+      "Treat the POS as a separate staff product with shared brand tokens only."
+    ],
+    "componentMappings": [
+      {
+        "referenceElementId": "GRP-01",
+        "targetComponent": "SwiftUI Button group",
+        "nativeOrCustom": "hybrid",
+        "customization": "filled/outline capsule hierarchy with native semantics"
+      },
+      {
+        "referenceElementId": "SUR-02",
+        "targetComponent": "paged ScrollView or TabView(.page)",
+        "nativeOrCustom": "hybrid",
+        "customization": "brand illustration and accessible custom indicator"
+      },
+      {
+        "referenceElementId": "GRP-02",
+        "targetComponent": "LazyVStack of NavigationLink/Button rows",
+        "nativeOrCustom": "hybrid",
+        "customization": "rounded outlines, section split, whole-row targets"
+      },
+      {
+        "referenceElementId": "ACT-07",
+        "targetComponent": "toggle Button",
+        "nativeOrCustom": "hybrid",
+        "customization": "heart off/on visual and selected accessibility state"
+      },
+      {
+        "referenceElementId": "GRP-04",
+        "targetComponent": "adaptive variant list",
+        "nativeOrCustom": "custom",
+        "customization": "variant metadata, price, and cart-owned quantity controls"
+      },
+      {
+        "referenceElementId": "ACT-09",
+        "targetComponent": "Stepper semantics or custom decrement/increment group",
+        "nativeOrCustom": "hybrid",
+        "customization": "44 pt targets, bounds, announcements, sold-out behavior"
+      },
+      {
+        "referenceElementId": "ACT-10",
+        "targetComponent": "labeled TextField or TextEditor",
+        "nativeOrCustom": "native",
+        "customization": "persistent label, contrast, validation"
+      },
+      {
+        "referenceElementId": "ACT-11",
+        "targetComponent": "Button in safeAreaInset",
+        "nativeOrCustom": "hybrid",
+        "customization": "derived item count and subtotal; loading/success/error states"
+      },
+      {
+        "referenceElementId": "SUR-05",
+        "targetComponent": "separate desktop/tablet master-detail shell",
+        "nativeOrCustom": "custom",
+        "customization": "navigation rail, order queue, detail inspector, keyboard/pointer support"
+      }
+    ],
+    "tokenFile": "tokens.tokens.json",
+    "prohibitions": [
+      "Do not label the interactive landing as a passive splash screen.",
+      "Do not add a persistent consumer tab bar that is absent from the reference.",
+      "Do not mix curated collections and product taxonomy without grouping labels.",
+      "Do not implement Cool Cat's Curation before its action and destination are defined.",
+      "Do not bake product text, price, quantity, calories, or subtotal into images.",
+      "Do not maintain visible subtotal independently from cart quantities and prices.",
+      "Do not reduce custom controls to glyph-sized hit targets.",
+      "Do not use handwritten type for transactional or error copy.",
+      "Do not copy Behance device frames, shadows, or gray backdrop into the app.",
+      "Do not present missing checkout, loyalty, or order-tracking screens as observed.",
+      "Do not import mobile density into the POS or POS density into the consumer app."
+    ],
+    "qa": [
+      {
+        "check": "reference coverage",
+        "target": "all four distinct public consumer mobile screens analyzed and represented",
+        "tolerance": "exact 4/4",
+        "method": "GIF frame inventory"
+      },
+      {
+        "check": "brand palette",
+        "target": "cobalt and cream match sampled references",
+        "tolerance": "calibrated visual tolerance",
+        "method": "pixel sampling and screenshot comparison"
+      },
+      {
+        "check": "mixed taxonomy removal",
+        "target": "curated collections visibly separated from catalog categories",
+        "tolerance": "exact section distinction",
+        "method": "information-architecture review"
+      },
+      {
+        "check": "control target size",
+        "target": "every custom action at least 44×44 pt",
+        "tolerance": "no exceptions",
+        "method": "hit-region debug overlay"
+      },
+      {
+        "check": "subtotal invariant",
+        "target": "displayed subtotal exactly equals selected variants and modifiers",
+        "tolerance": "exact",
+        "method": "deterministic unit and UI tests"
+      },
+      {
+        "check": "large-text reflow",
+        "target": "no clipping in categories, variants, CTA, or notes",
+        "tolerance": "no information loss",
+        "method": "Dynamic Type screenshot matrix"
+      },
+      {
+        "check": "CTA occlusion",
+        "target": "add-to-order remains visible without covering content",
+        "tolerance": "zero occlusion",
+        "method": "compact-height device capture"
+      },
+      {
+        "check": "color redundancy",
+        "target": "favorite, pagination, quantity, sold-out, and status have semantic non-color states",
+        "tolerance": "no color-only essential meaning",
+        "method": "grayscale and screen-reader review"
+      },
+      {
+        "check": "POS boundary",
+        "target": "consumer and staff products share tokens but not navigation/density patterns",
+        "tolerance": "documented component separation",
+        "method": "design-system review"
+      }
+    ]
+  },
+  "uncertainties": [
+    {
+      "id": "U-01",
+      "question": "Is the branded gateway shown every launch or only after onboarding?",
+      "status": "unknown",
+      "alternatives": [
+        "persistent home",
+        "first-run gateway",
+        "marketing-only screen"
+      ],
+      "evidenceNeeded": "prototype flow or design file",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-02",
+      "question": "What are onboarding pages two and three?",
+      "status": "unknown",
+      "alternatives": [
+        "brand story",
+        "ordering tutorial",
+        "booking tutorial"
+      ],
+      "evidenceNeeded": "complete prototype",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-03",
+      "question": "Which route is primary in repeat use: Menu or Bookings?",
+      "status": "inferred",
+      "alternatives": [
+        "Menu",
+        "Bookings",
+        "equal usage"
+      ],
+      "evidenceNeeded": "product brief or usage goal",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-04",
+      "question": "What does Cool Cat's Curation do?",
+      "status": "unknown",
+      "alternatives": [
+        "custom order request",
+        "chef recommendation",
+        "personalized menu",
+        "promotional collection"
+      ],
+      "evidenceNeeded": "destination screen and interaction contract",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-05",
+      "question": "Are Recommended and Popular personalized, editorial, or static collections?",
+      "status": "unknown",
+      "alternatives": [
+        "personalized",
+        "editorial",
+        "sales-ranked",
+        "static"
+      ],
+      "evidenceNeeded": "catalog and ranking model",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-06",
+      "question": "Can one add multiple sizes of the same product in one operation?",
+      "status": "inferred",
+      "alternatives": [
+        "multi-variant group order",
+        "single selected size",
+        "prototype-only steppers"
+      ],
+      "evidenceNeeded": "cart requirements",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-07",
+      "question": "Why do Medium and Large show quantities 2 and 3 while the CTA total is Rs. 850?",
+      "status": "unknown",
+      "alternatives": [
+        "placeholder values",
+        "quantity mismatch",
+        "different quantity semantics"
+      ],
+      "evidenceNeeded": "source prototype or data binding",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-08",
+      "question": "Is the customization note single-line or multiline?",
+      "status": "unknown",
+      "alternatives": [
+        "single-line note",
+        "multiline note",
+        "modifier search"
+      ],
+      "evidenceNeeded": "interaction specification",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-09",
+      "question": "What currency, tax, and fulfillment model is intended?",
+      "status": "unknown",
+      "alternatives": [
+        "Indian rupees with tax included",
+        "tax calculated later",
+        "concept placeholder"
+      ],
+      "evidenceNeeded": "commerce requirements",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-10",
+      "question": "How does a consumer cart become the POS Order object?",
+      "status": "unknown",
+      "alternatives": [
+        "direct API submission",
+        "staff re-entry",
+        "same local prototype only"
+      ],
+      "evidenceNeeded": "order domain and integration contract",
+      "blocksRebuild": true
+    },
+    {
+      "id": "U-11",
+      "question": "What are the exact display, handwriting, and functional font families and licenses?",
+      "status": "unknown",
+      "alternatives": [
+        "custom lettering assets",
+        "licensed fonts",
+        "system sans plus assets"
+      ],
+      "evidenceNeeded": "design-system source",
+      "blocksRebuild": false
+    },
+    {
+      "id": "U-12",
+      "question": "What are the dark-mode and accessibility states?",
+      "status": "unknown",
+      "alternatives": [
+        "light-only brand experience",
+        "semantic dark mode",
+        "no production states"
+      ],
+      "evidenceNeeded": "alternate references or runtime build",
+      "blocksRebuild": false
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-01",
+      "authority": "PROJECT_DEFINED",
+      "title": "Cool Cat's | Brand identity | Coffee Shop — Behance",
+      "url": "https://www.behance.net/gallery/227587773/Cool-Cats-Brand-identity-Coffee-Shop",
+      "section": "project description, owners, scope, and publication date",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "id": "SRC-02",
+      "authority": "PROJECT_DEFINED",
+      "title": "Cool Cat's mobile application animation module — Behance",
+      "url": "https://www.behance.net/gallery/227587773/Cool-Cats-Brand-identity-Coffee-Shop/modules/1302652947",
+      "section": "four public consumer mobile screens",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "id": "SRC-03",
+      "authority": "PROJECT_DEFINED",
+      "title": "Cool Cat's POS order-management module — Behance",
+      "url": "https://www.behance.net/gallery/227587773/Cool-Cats-Brand-identity-Coffee-Shop/modules/1302652961",
+      "section": "order queue and detail workspace",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "id": "SRC-04",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Onboarding",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/onboarding",
+      "section": "onboarding",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "id": "SRC-05",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Buttons",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/buttons",
+      "section": "buttons and target size",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "id": "SRC-06",
+      "authority": "PLATFORM_OFFICIAL",
+      "title": "Apple Human Interface Guidelines — Navigation and search",
+      "url": "https://developer.apple.com/design/human-interface-guidelines/navigation-and-search",
+      "section": "navigation and search",
+      "verifiedAt": "2026-08-17"
+    },
+    {
+      "id": "SRC-07",
+      "authority": "STANDARD_NORMATIVE",
+      "title": "Web Content Accessibility Guidelines (WCAG) 2.2",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "section": "target size, focus, and non-color communication",
+      "verifiedAt": "2026-08-17"
+    }
+  ]
+}
