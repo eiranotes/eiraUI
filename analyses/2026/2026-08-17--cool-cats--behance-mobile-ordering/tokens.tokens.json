@@ -1,0 +1,256 @@
+{
+  "$schema": "https://www.designtokens.org/tr/drafts/format/",
+  "meta": {
+    "analysisId": "UIR-20260817-001",
+    "status": "proposed",
+    "note": "Reconstruction tokens sampled or proposed from the public Behance concept; exact production values require source design files."
+  },
+  "color": {
+    "brand": {
+      "cobalt": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0,
+            0.1647,
+            0.5451
+          ],
+          "alpha": 1
+        },
+        "$description": "Sampled dominant cobalt #002A8B."
+      },
+      "cream": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.9725,
+            0.9412,
+            0.8863
+          ],
+          "alpha": 1
+        },
+        "$description": "Sampled warm cream #F8F0E2."
+      }
+    },
+    "ink": {
+      "primary": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.1569,
+            0.1608,
+            0.1843
+          ],
+          "alpha": 1
+        },
+        "$description": "Proposed functional text #28292F."
+      },
+      "illustration": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.03,
+            0.03,
+            0.03
+          ],
+          "alpha": 1
+        },
+        "$description": "Near-black monoline art."
+      }
+    },
+    "surface": {
+      "input": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8902,
+            0.851,
+            0.7843
+          ],
+          "alpha": 1
+        },
+        "$description": "Proposed note-field surface #E3D9C8."
+      },
+      "mockupBackdrop": {
+        "$type": "color",
+        "$value": {
+          "colorSpace": "srgb",
+          "components": [
+            0.8824,
+            0.8863,
+            0.902
+          ],
+          "alpha": 1
+        },
+        "$description": "Behance presentation backdrop only; prohibited as an app token."
+      }
+    }
+  },
+  "space": {
+    "page": {
+      "inline": {
+        "$type": "dimension",
+        "$value": {
+          "value": 22,
+          "unit": "pt"
+        }
+      }
+    },
+    "stack": {
+      "row": {
+        "$type": "dimension",
+        "$value": {
+          "value": 18,
+          "unit": "pt"
+        }
+      }
+    }
+  },
+  "size": {
+    "control": {
+      "minimum": {
+        "$type": "dimension",
+        "$value": {
+          "value": 44,
+          "unit": "pt"
+        }
+      }
+    },
+    "cta": {
+      "height": {
+        "$type": "dimension",
+        "$value": {
+          "value": 50,
+          "unit": "pt"
+        }
+      }
+    },
+    "category": {
+      "minimumHeight": {
+        "$type": "dimension",
+        "$value": {
+          "value": 68,
+          "unit": "pt"
+        }
+      }
+    }
+  },
+  "radius": {
+    "control": {
+      "capsule": {
+        "$type": "dimension",
+        "$value": {
+          "value": 999,
+          "unit": "pt"
+        }
+      }
+    },
+    "category": {
+      "$type": "dimension",
+      "$value": {
+        "value": 30,
+        "unit": "pt"
+      }
+    }
+  },
+  "stroke": {
+    "control": {
+      "outline": {
+        "$type": "dimension",
+        "$value": {
+          "value": 1,
+          "unit": "pt"
+        }
+      }
+    }
+  },
+  "typography": {
+    "heading": {
+      "product": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "system sans",
+          "fontSize": {
+            "value": 26,
+            "unit": "pt"
+          },
+          "fontWeight": 600,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "pt"
+          },
+          "lineHeight": 1.15
+        }
+      },
+      "category": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "system sans",
+          "fontSize": {
+            "value": 18,
+            "unit": "pt"
+          },
+          "fontWeight": 700,
+          "letterSpacing": {
+            "value": 0,
+            "unit": "pt"
+          },
+          "lineHeight": 1.15
+        }
+      }
+    },
+    "body": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "system sans",
+        "fontSize": {
+          "value": 15,
+          "unit": "pt"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "pt"
+        },
+        "lineHeight": 1.4
+      }
+    },
+    "metadata": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "system sans",
+        "fontSize": {
+          "value": 13,
+          "unit": "pt"
+        },
+        "fontWeight": 400,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "pt"
+        },
+        "lineHeight": 1.3
+      }
+    },
+    "button": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "system sans",
+        "fontSize": {
+          "value": 16,
+          "unit": "pt"
+        },
+        "fontWeight": 500,
+        "letterSpacing": {
+          "value": 0,
+          "unit": "pt"
+        },
+        "lineHeight": 1.2
+      }
+    }
+  }
+}
